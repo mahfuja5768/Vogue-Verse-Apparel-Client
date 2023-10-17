@@ -1,0 +1,265 @@
+[
+  {
+    "_id": 1,
+    "brandName": "Nike",
+    "brandImage": "https://i.ibb.co/0mFWWNs/nike-Brand.jpg",
+    "advertisementImages": [
+      "https://i.ibb.co/FgHJJMF/s3.jpg",
+      "https://i.ibb.co/DkM6Ghc/ad1.jpg",
+      "https://i.ibb.co/KzHRb62/ad2.jpg"
+    ],
+    "products": [
+      {
+        "_id": "aMRt5gCnJUgu2Jv9",
+        "image": "https://i.ibb.co/wL2GNRD/s1.jpg",
+        "brandName": "Nike",
+        "name": "Nike Air Max",
+        "type": "Shoes",
+        "price": 439.99,
+        "rating": 4.5,
+        "description": "Known for their visible air cushioning in the sole."
+      },
+      {
+        "_id": "1KnPAK6EMg1S4O2H",
+        "image": "https://i.ibb.co/2Mh0181/s2.jpg",
+        "brandName": "Nike",
+        "name": "Nike Air Force ",
+        "type": "Shoes",
+        "price": 739.99,
+        "rating": 4.0,
+        "description": "A classic and iconic basketball shoe."
+      },
+      {
+        "_id": "h50CRYzonDHGTqph",
+        "image": "https://i.ibb.co/KzHRb62/ad2.jpg",
+        "brandName": "Nike",
+        "name": "Nike Air Jordan",
+        "type": "Shoes",
+        "price": 139.99,
+        "rating": 4.2,
+        "description": "A line of basketball shoes associated with NBA legend Michael Jordan."
+      },
+      {
+        "_id": "ZaFiFrmfBlOkTZpy",
+        "image": "https://i.ibb.co/DkM6Ghc/ad1.jpg",
+        "brandName": "Nike",
+        "name": "Nike SB Dunk",
+        "type": "Shoes",
+        "price": 69.99,
+        "rating": 4.7,
+        "description": " Skateboarding shoes with a variety of colorways and collaborations"
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "brandName": "Gucci",
+    "brandImage": "https://i.ibb.co/cbJZc0c/gucci-Brand.jpg",
+    "advertisementImages": [
+      "https://i.ibb.co/BLd6cCZ/Jackie.png",
+      "https://i.ibb.co/FxpCdkN/Bamboo.png",
+      "https://i.ibb.co/VMR2Qk7/gucci-gg-marmont-quilted-leather-shoulder-bag-f7c5e959ee9f44c384940c0517c62bdb.webp"
+    ],
+    "products": [
+      {
+        "_id": "8Ub6gyeGjMCGqAJb",
+        "image": "https://i.ibb.co/FxpCdkN/Bamboo.png",
+        "brandName": "Gucci",
+        "name": "Gucci bamboo bag vintage",
+        "type": "Hand Bags",
+        "price": 59.99,
+        "rating": 4.3,
+        "description": "With its unique features such as the hand-curved bamboo handle, closure and a mirror in its own leather holder."
+      },
+      {
+        "_id": "PzRRK2xkbSosKRuG",
+        "image": "https://i.ibb.co/BLd6cCZ/Jackie.png",
+        "brandName": "Gucci",
+        "name": "Jackie",
+        "type": "Shoulder bag",
+        "price": 839.99,
+        "rating": 7.1,
+        "description": "Gucci's small 'Jackie' bag takes its curved silhouette from the original style that debuted in the '60s and even boasts the same gold-tone piston clasp. "
+      },
+      {
+        "_id": "rgTMJaArSbd6Gd6j",
+        "image": "https://i.ibb.co/VMR2Qk7/gucci-gg-marmont-quilted-leather-shoulder-bag-f7c5e959ee9f44c384940c0517c62bdb.webp",
+        "brandName": "Gucci",
+        "name": "Marmont",
+        "type": "Shoulder bag",
+        "price": 229.99,
+        "rating": 4.4,
+        "description": "The Marmont has dominated and become the brand's most recognized design."
+      },
+      {
+        "_id": "VmLUsjeN6Y7WQdSa",
+        "image": "https://i.ibb.co/JBpwZkG/a.webp",
+        "brandName": "Gucci",
+        "name": "Gucci Dionysus GG Supreme",
+        "type": "Shoulder bag",
+        "price": 739.99,
+        "rating": 4.6,
+        "description": "The Gucci Dionysus bag has undoubtedly achieved a cult-like following, as Rivera attests, stating, Worshiped worldwide, the Dionysus became, and has maintained IT bag status since its release."
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "brandName": "Zara ",
+    "brandImage": "https://i.ibb.co/x6bH9qP/zara-brand.webp",
+    "advertisementImages": [
+      "https://i.ibb.co/M68XGzC/6858492600-6-1-1.jpg",
+      "https://i.ibb.co/6yqcY28/3918351305-6-2-1.jpg",
+      "https://i.ibb.co/HG8g7H0/8573128600-6-1-1.jpg"
+    ],
+    "products": [
+      {
+        "_id": "zKmgJ1yZGe4nwS0E",
+        "image": "https://i.ibb.co/HG8g7H0/8573128600-6-1-1.jpg",
+        "brandName": "Zara",
+        "name": "ZW COLLECTION SATIN DRESS",
+        "type": "Clothing",
+        "price": 119.99,
+        "rating": 9.3,
+        "description": "a satin dress is made from satin fabric, which is known for its smooth and shiny surface."
+      },
+      {
+        "_id": "NNXlzSLeqrJBnvZQ",
+        "image": "https://i.ibb.co/M68XGzC/6858492600-6-1-1.jpg",
+        "brandName": "Zara",
+        "name": "RED BALLOON DRESS",
+        "type": "Clothing",
+        "price": 89.99,
+        "rating": 4.1,
+        "description": "Sleeveless round neck dress. Buttoned teardrop opening at the back."
+      },
+      {
+        "_id": "c1SSEDbPW7WyFOzZ",
+        "image": "https://i.ibb.co/sjLjkF4/2602220800-6-1-1.jpg",
+        "brandName": "Zara",
+        "name": "SPLIT SUEDE TRACK SOLE LOAFERS",
+        "type": "Shoes",
+        "price": 296.99,
+        "rating": 8.4,
+        "description": "Leather loafers with a split suede finish. Decorative penny strap on the instep. Semi-round toe. Contrast-colour topstitching around the upper. Slightly chunky track sole."
+      },
+      {
+        "_id": "cbVQWCt6yBYmqITL",
+        "image": "https://i.ibb.co/6yqcY28/3918351305-6-2-1.jpg",
+        "brandName": "Zara",
+        "name": "GEOMETRIC JACQUARD SHIRT",
+        "type": "Clothing",
+        "price": 29.99,
+        "rating": 4.4,
+        "description": "Relaxed fit shirt made of a viscose and cotton blend. Featuring a camp collar, short sleeves, a split hem and a button-up front."
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "brandName": "H&M",
+    "brandImage": "https://i.ibb.co/ryfSRcb/709px-H-M-Logo-svg.png",
+    "advertisementImages": ["ad4.jpg", "ad5.jpg", "ad6.jpg"],
+    "products": [
+      {
+        "_id": "dRJpRf8aaD6ygy24",
+        "image": "https://i.ibb.co/fdkM9Yp/hmgoepprod-1.jpg",
+        "brandName": "H&M",
+        "name": "Regular Fit Hoodie",
+        "type": "Clothing",
+        "price": 159.99,
+        "rating": 6.3,
+        "description": "H&M offers a variety of hoodie designs, so the specific design details may vary. However, it generally features a hood with drawstrings for adjustment and a front kangaroo pocket for convenience."
+      },
+      {
+        "_id": "FznsYHYySFZd9pi0",
+        "image": "https://i.ibb.co/3pqV61h/hmgoepprod.webp",
+        "brandName": "H&M",
+        "name": "Regular Fit Printed T-shirt",
+        "type": "Clothing",
+        "price": 89.99,
+        "rating": 8.1,
+        "description": " H&M T-shirts are usually made from a blend of materials that may include cotton, polyester, and sometimes elastane for stretch and comfort."
+      },
+      {
+        "_id": "Qg3XYtYlPhvzKHfk",
+        "image": "https://i.ibb.co/jgwZzzP/hmgoepprod-1.webp",
+        "brandName": "H&M",
+        "name": "2-pack Crop T-shirts",
+        "type": "Clothing",
+        "price": 29.99,
+        "rating": 7.4,
+        "description": "Crop T-shirts are often made from a blend of materials like cotton, polyester, or a combination of fabrics. The material choice can affect the shirt's feel and breathability."
+      },
+      {
+        "_id": "wi4YKOaB2Ds4c3XL",
+        "image": "https://i.ibb.co/PCC3DLM/hmgoepprod-2.webp",
+        "brandName": "H&M",
+        "name": "Fluffy Earmuffs",
+        "type": "Accessories",
+        "price": 29.99,
+        "rating": 4.4,
+        "description": "Earmuffs are available in a variety of colors and styles, making them a fashionable accessory. You can choose a pair that matches your outfit or personal taste."
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "brandName": "Levi's",
+    "brandImage": "https://i.ibb.co/NVHmwHm/logo.jpg",
+    "advertisementImages": [
+      "https://i.ibb.co/Krw1Bnv/723340689-01-Style-Shot.jpg",
+      "https://i.ibb.co/1dpt47b/A23450002-01-Style-Shot.jpg",
+      "https://i.ibb.co/W0LSV82/A60860002-01-Style-Shot.jpg"
+    ],
+    "products": [
+      {
+        "_id": "PnFpsTSzEkpg840O",
+        "image": "https://i.ibb.co/yshKbPM/A38520001-01-Front.jpg",
+        "brandName": "Levi's",
+        "name": "WOMEN'S FLORAL MULTI BAND NECK TOP",
+        "type": "Clothing",
+        "price": 5559.99,
+        "rating": 4.3,
+        "description": "This top is designed to fit women and may come in various styles, such as fitted, loose, or relaxed fits. The specific fit can vary based on the brand and current fashion trends."
+      },
+      {
+        "_id": "ZNth9WspJkBRZA98",
+        "image": "https://i.ibb.co/1dpt47b/A23450002-01-Style-Shot.jpg",
+        "brandName": "Levi's",
+        "name": "WOMEN'S PRINTED CREAM ROUND NECK DRESS",
+        "type": "Clothing",
+        "price": 69.99,
+        "rating": 9.1,
+        "description": "The dress is often made from lightweight and breathable materials, making it suitable for different seasons. Common materials include cotton, polyester, and blends."
+      },
+      {
+        "_id": "rkcz8aGXp7mAgE7B",
+        "image": "https://i.ibb.co/W0LSV82/A60860002-01-Style-Shot.jpg",
+        "brandName": "Levi's",
+        "name": "MEN'S SOLID GREEN COLLAR NECK JACKET",
+        "type": "Clothing",
+        "price": 77.99,
+        "rating": 8.4,
+        "description": "The design of the jacket can vary, and it might include features like a front zipper or buttons, pockets, and possibly additional details like cuffs or adjustable elements."
+      },
+      {
+        "_id": "a5l2QEXzc_idseiQp",
+        "image": "https://i.ibb.co/Krw1Bnv/723340689-01-Style-Shot.jpg",
+        "brandName": "Levi's",
+        "name": "MEN'S PRINTED COLLAR NECK JACKET",
+        "type": "Clothing",
+        "price": 29.99,
+        "rating": 4.4,
+        "description": "The jacket may include various types of pockets, such as chest pockets, side pockets, or interior pockets, providing functionality and storage options."
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "brandName": "Adidas",
+    "brandImage": "https://i.ibb.co/267c7ym/adidas.jpg",
+    "advertisementImages": [],
+    "products": []
+  }
+]
