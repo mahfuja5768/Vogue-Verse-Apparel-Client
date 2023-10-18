@@ -3,7 +3,7 @@ import logo from "../assets/logoName.png";
 
 const SideNav = () => {
   return (
-    <div className="bg-primary h-[100vh] p-5 flex flex-col gap-12 pt-12 text-black">
+    <div className="bg-gradient-to-t from-white to-blue-500 h-[100vh] p-5 flex flex-col gap-12 pt-12 text-black">
       <Link to="/">
         <img src={logo} alt="" className="w-72 h-24" />
       </Link>
@@ -15,7 +15,7 @@ const SideNav = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary  decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Home
@@ -27,7 +27,7 @@ const SideNav = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Add Product
@@ -39,7 +39,7 @@ const SideNav = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               My Cart
@@ -51,7 +51,7 @@ const SideNav = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Register
@@ -63,7 +63,7 @@ const SideNav = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Login

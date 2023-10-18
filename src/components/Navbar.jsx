@@ -8,8 +8,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="">
-      <nav className="bg-primary text-white">
+    <div>
+      <nav className="mb-8 bg-primary text-black">
         <div className="flex items-center flex-row-reverse p-4 justify-between lg:flex-row gap-6">
           <div
             onClick={() => setOpen(!open)}
@@ -41,7 +41,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? `underline decoration-secondary  decoration-4 underline-offset-8`
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Home
@@ -53,7 +53,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Add Product
@@ -65,7 +65,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               My Cart
@@ -77,7 +77,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Register
@@ -89,7 +89,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-[#6d604f]"
+                  : "hover:text-secondary"
               }
             >
               Login

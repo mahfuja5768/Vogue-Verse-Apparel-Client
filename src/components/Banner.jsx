@@ -1,20 +1,28 @@
-
-
 const Banner = () => {
-    return (
-        <div className="">
-            <div className="hero min-h-[400px] bg-primary relative">
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content max-w-[1280px] mx-auto ">
-    <div className="max-w-md text-black">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button className="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
+  return (
+    <div className="">
+      <div className="hero min-h-[400px] bg-gradient-to-r from-blue-500 to-transparent">
+        <div className="hero-content max-w-[1280px] py-12 mx-auto text-start text-black flex gap-6 justify-between flex-col md:flex-row">
+          <div className="max-w-md">
+            <h1 className="text-xl font-semibold">Welcome To,</h1>
+            <h1 className="mb-5 text-4xl lg:text-5xl font-bold">Vogue-Verse-Apparel</h1>
+            <p className="mb-5">
+              Your Ultimate Destination for Fashion and Style. Explore the
+              Latest Styles and Discover Your Signature Look. Your Fashion
+              Journey Begins Here
+            </p>
+            <button className="btn bg-secondary text-white hover:text-black">Shop Now</button>
+          </div>
+          <div>
+            <img
+              src={`https://i.ibb.co/tPPfF2f/fashion-1308-40546-removebg-preview.png`}
+              alt=""
+            />
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Banner;
