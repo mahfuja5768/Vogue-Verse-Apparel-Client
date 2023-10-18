@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="mb-8 bg-primary text-black">
+      <nav className="mb-8 bg-secondary text-black">
         <div className="flex items-center flex-row-reverse p-4 justify-between lg:flex-row gap-6">
           <div
             onClick={() => setOpen(!open)}
@@ -18,9 +18,9 @@ const Navbar = () => {
             {
               // open ? 'close icon' : 'open icon'
               open ? (
-                <FaX className="text-2xl text-black"></FaX>
+                <FaX className="text-2xl text-white"></FaX>
               ) : (
-                <FaBars className="text-2xl text-black"></FaBars>
+                <FaBars className="text-2xl text-white"></FaBars>
               )
             }
           </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </div>
         </div>
         <ul
-          className={`flex flex-col justify-center font-bold text-lg  text-black z-10  items-start gap-5 px-8 py-6 pb-12 bg-primary w-full absolute duration-700 all ${
+          className={`flex flex-col justify-center font-bold text-lg  text-white z-10  items-start gap-5 px-8 py-6 pb-12 bg-secondary w-full absolute duration-700 all ${
             open ? "top-16" : "top-[-500px]"
           }`}
         >
@@ -40,8 +40,8 @@ const Navbar = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? `underline decoration-secondary  decoration-4 underline-offset-8`
-                  : "hover:text-secondary"
+                  ? `underline decoration-white  decoration-4 underline-offset-8`
+                  : "hover:text-hoverText"
               }
             >
               Home
@@ -52,8 +52,8 @@ const Navbar = () => {
               to="/addProduct"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Add Product
@@ -64,8 +64,8 @@ const Navbar = () => {
               to="/myCart"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               My Cart
@@ -76,8 +76,8 @@ const Navbar = () => {
               to="/register"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Register
@@ -88,8 +88,8 @@ const Navbar = () => {
               to="/login"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Login

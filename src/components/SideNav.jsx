@@ -3,7 +3,7 @@ import logo from "../assets/logoName.png";
 
 const SideNav = () => {
   return (
-    <div className="bg-gradient-to-t from-white to-blue-500 h-full sticky  p-5 flex flex-col gap-12 pt-12 text-black">
+    <div className="bg-gradient-to-t from-white to-yellow-100 border-r-2 border-yellow-200 h-full sticky  p-5 flex flex-col gap-12 pt-12 text-black">
       <Link to="/">
         <img src={logo} alt="" className="w-72 h-24" />
       </Link>
@@ -14,8 +14,8 @@ const SideNav = () => {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary  decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-hoverText  decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Home
@@ -26,8 +26,8 @@ const SideNav = () => {
               to="/addProduct"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-hoverText decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Add Product
@@ -38,8 +38,8 @@ const SideNav = () => {
               to="/myCart"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-hoverText decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               My Cart
@@ -50,8 +50,8 @@ const SideNav = () => {
               to="/register"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-hoverText decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Register
@@ -62,8 +62,8 @@ const SideNav = () => {
               to="/login"
               className={({ isActive }) =>
                 isActive
-                  ? " underline decoration-secondary decoration-4 underline-offset-8"
-                  : "hover:text-secondary"
+                  ? " underline decoration-hoverText decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
               }
             >
               Login

@@ -29,7 +29,7 @@ const Login = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-primary py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
+      <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12">
           Login Now
         </h1>
@@ -94,7 +94,7 @@ const Login = () => {
               )}
               <input
                 type="submit"
-                className="w-full cursor-pointer bg-secondary text-white my-2 rounded-lg py-4 font-bold"
+                className="w-full cursor-pointer hover:bg-hoverText bg-secondary text-white my-2 rounded-lg py-4 font-bold"
                 value="Login now"
               />
             </form>

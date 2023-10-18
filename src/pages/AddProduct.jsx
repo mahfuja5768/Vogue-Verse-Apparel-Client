@@ -35,7 +35,7 @@ const AddProduct = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-primary py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
+      <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
             Add Product
@@ -75,10 +75,7 @@ const AddProduct = () => {
                   <span className="label-text text-xl ">Brand Name</span>
                 </label>
                 <label>
-                  <select
-                    name="brandName"
-                    className="select select-bordered"
-                  >
+                  <select name="brandName" className="select select-bordered">
                     <option value="Nike">Nike</option>
                     <option value="Gucci">Gucci</option>
                     <option value="Zara">Zara</option>
@@ -157,7 +154,7 @@ const AddProduct = () => {
             </div>
             <input
               type="submit"
-              className="w-full cursor-pointer bg-secondary text-white my-5 rounded-lg py-4 font-bold"
+              className="w-full cursor-pointer hover:bg-hoverText bg-secondary text-white my-5 rounded-lg py-4 font-bold"
               value="Add Product"
             />
           </form>
