@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
 const Brand = ({ brand }) => {
-  console.log(brand);
+//   console.log(brand);
 
   const navigate = useNavigate()
 
-  const handleBrandProducts = (_id)=>{
-    console.log(_id)
-    navigate('/showProducts')
+  const handleBrandProducts = (brandName)=>{
+    // console.log(_id)
+    navigate(`/showProducts/${brandName}`)
   }
 
   return (
@@ -23,7 +23,7 @@ const Brand = ({ brand }) => {
         <h2 className="text-xl py-2 font-semibold">
           Brand Name: {brand.brandName}
         </h2>
-        <button onClick={()=>{handleBrandProducts(brand._id)}} className="btn bg-secondary my-2  hover:bg-hoverText text-white">
+        <button onClick={()=>{handleBrandProducts(brand.brandName)}} className="btn bg-secondary my-2  hover:bg-hoverText text-white">
           Visit Now
         </button>
       </div>

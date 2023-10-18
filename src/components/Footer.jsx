@@ -2,19 +2,22 @@ import { FaFacebookF, FaLinkedin, FaMailBulk, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logoName.png";
 import { FaPhone } from "react-icons/fa6";
+import bg from "../assets/9.png";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-t from-yellow-200 to-transparent px-8">
+    <div className="bg-gradient-to-t from-yellow-200 to-transparent px-8" >
       <footer>
         <div className="hero text-black ">
           <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className=" max-w-[1280px] mx-auto py-12 md:py-20  grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-
-            
+            className=" max-w-[1280px] mx-auto py-12 md:py-16  grid grid-cols-1 md:grid-cols-3 gap-8"
+            style={{
+              backgroundImage: `url(${bg})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              opacity:'100'
+            }}>
             <div className="md:grid-cols-2">
               <div className="flex flex-col gap-3 ">
                 <img src={logo} alt="" className="mb-3" />

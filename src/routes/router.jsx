@@ -33,7 +33,8 @@ const router = createBrowserRouter([
                 element:<UpdateProduct></UpdateProduct>
             },
             {
-                path:'/showProducts',
+                path:'/showProducts/:brandName',
+                loader: ({params})=> fetch(`/brandsProduct/${params.brandName}`) ,
                 element:<ShowProducts></ShowProducts>
             },
             {
