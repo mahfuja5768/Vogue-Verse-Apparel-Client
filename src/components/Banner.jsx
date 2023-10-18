@@ -6,12 +6,12 @@ const Banner = () => {
           <div className="max-w-md">
             <h1 className="text-xl font-semibold">Welcome To,</h1>
             <h1 className="mb-5 text-4xl lg:text-5xl font-bold">Vogue-Verse-Apparel</h1>
-            <p className="mb-5">
+            <p className="mb-5 text-justify">
               Your Ultimate Destination for Fashion and Style. Explore the
               Latest Styles and Discover Your Signature Look. Your Fashion
               Journey Begins Here
             </p>
-            <button className="btn bg-secondary text-white hover:text-black">Shop Now</button>
+            <button className="btn bg-secondary border-none text-white hover:text-black">Shop Now</button>
           </div>
           <div>
             <img

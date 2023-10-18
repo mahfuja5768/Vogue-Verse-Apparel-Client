@@ -1,4 +1,4 @@
-import { FaBars, FaBolt, FaCartPlus, FaSistrix } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import logo from "../assets/logoName.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaX } from "react-icons/fa6";

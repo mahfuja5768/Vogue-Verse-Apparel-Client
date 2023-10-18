@@ -3,7 +3,7 @@ import logo from "../assets/logoName.png";
 
 const SideNav = () => {
   return (
-    <div className="bg-gradient-to-t from-white to-blue-500 h-[100vh] p-5 flex flex-col gap-12 pt-12 text-black">
+    <div className="bg-gradient-to-t from-white to-blue-500 h-full sticky  p-5 flex flex-col gap-12 pt-12 text-black">
       <Link to="/">
         <img src={logo} alt="" className="w-72 h-24" />
       </Link>
