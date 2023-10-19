@@ -16,22 +16,24 @@ const ProductDetails = () => {
       });
   }, [productId]);
 
-  const handleToMyCart = ()=>{
+  const handleToMyCart = (id) => {
+    console.log(id);
+
     const name = product.name;
     const brandName = product.brandName;
-    const productType = product.productType;
+    const type = product.type;
     const price = product.price;
     const rating = product.rating;
     const description = product.description;
     const image = product.image;
     const addProduct = {
-        name,
-        brandName,
-        productType,
-        price,
-        description,
-        rating,
-        image,
+      name,
+      brandName,
+      type,
+      price,
+      description,
+      rating,
+      image,
     };
     console.log(addProduct);
 
@@ -50,11 +52,11 @@ const ProductDetails = () => {
             title: "Success!",
             text: "Product added to your cart successfully!",
             icon: "success",
-            confirmButtonText: "Cool",
+            confirmButtonText: "Done",
           });
         }
       });
-  }
+  };
 
   return (
     <div className="max-w-[1280px] mx-auto my-20">
@@ -73,7 +75,9 @@ const ProductDetails = () => {
           <h2 className="text-xl font-semibold bg-hoverText text-white rounded-lg mb-2 p-3">
             Brand Name: {product.brandName}
           </h2>
-          <p className="text-lg  bg-hoverText text-white rounded-lg mb-2 p-3">Type: {product.type}</p>
+          <p className="text-lg  bg-hoverText text-white rounded-lg mb-2 p-3">
+            Type: {product.type}
+          </p>
 
           <p className="text-lg bg-hoverText text-white rounded-lg mb-2 p-3 ">
             <span className="font-medium"> Description:</span>{" "}
@@ -84,12 +88,12 @@ const ProductDetails = () => {
             <p className="text-lg font-semibold">Rating: {product.rating}</p>
             <p className="text-lg font-semibold">Price: {product.price}</p>
           </div>
-
-          <div className="flex justify-between flex-col">
-            <button className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white">
-              <span onClick={handleToMyCart} className="ms-1"> Add to cart</span>
-            </button>
-          </div>
+          <button
+            onClick={() => handleToMyCart(product._id)}
+            className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white"
+          >
+            Add to cart
+          </button>
         </div>
       </div>
     </div>

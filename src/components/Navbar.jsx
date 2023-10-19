@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="mb-8 bg-gradient-to-b from-yellow-200 to-transparent border-b-2 shadow-lg text-black">
+      <nav className="mb-12 bg-gradient-to-b from-yellow-200 to-transparent border-b-2 shadow-lg text-black">
         <div className="max-w-[1280px] mx-auto lg:grid lg:grid-cols-4 lg:gap-2 flex items-center flex-row-reverse p-4 justify-between lg:flex-row gap-6">
           <div
             onClick={() => setOpen(!open)}
