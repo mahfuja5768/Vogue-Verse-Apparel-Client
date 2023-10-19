@@ -3,7 +3,7 @@ import logo from "../assets/logoName.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaX } from "react-icons/fa6";
 import { useState } from "react";
-import userProfile from '../assets/user.png'
+import userProfile from "../assets/user.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -79,11 +79,15 @@ const Navbar = () => {
               >
                 Register
               </NavLink>
-            </li>      
+            </li>
           </div>
           <div className="hidden lg:flex gap-3 justify-center items-center">
             <img src={userProfile} className="w-10 h-10 rounded-full " alt="" />
-            <button className="btn bg-secondary hover:bg-hoverText text-white">Login</button>
+            <Link to="/login">
+              <button className="btn bg-secondary hover:bg-hoverText text-white">
+                Login
+              </button>
+            </Link>
           </div>
         </div>
         <ul

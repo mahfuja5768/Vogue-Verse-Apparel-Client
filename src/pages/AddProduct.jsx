@@ -1,5 +1,4 @@
 import Swal from "sweetalert2";
-import bg from "../assets/9.png";
 
 const AddProduct = () => {
   const handleAddProduct = (e) => {
@@ -50,12 +49,6 @@ const AddProduct = () => {
   return (
     <div
       className="py-0 lg:py-8"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
     >
       <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">

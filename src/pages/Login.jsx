@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import bg from "../assets/9.png";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
@@ -22,12 +21,6 @@ const Login = () => {
   return (
     <div
       className="py-0 lg:py-8"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
     >
       <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12">

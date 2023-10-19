@@ -43,12 +43,14 @@ const ShowProduct = ({ product }) => {
               Show details
             </button>
           </Link>
-          <button className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white">
+          <Link to={`/updateProduct/${_id}`}>
+          <button  className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white">
             <span>
               <FaPen></FaPen>
             </span>
             <span className="ms-1"> Update</span>
           </button>
+          </Link>
         </div>
       </div>
     </div>
