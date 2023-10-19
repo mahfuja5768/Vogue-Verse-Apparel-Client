@@ -13,8 +13,8 @@ const Brands = () => {
   }, []);
 
   return (
-    <div className="my-24 px-4">
-      <div className="max-w-[1280px] mx-auto text-center">
+    <div className="my-24 px-4 max-w-[1280px] mx-auto">
+      <div className="text-center">
         <h2 className="text-4xl text-secondary font-bold mb-4">Discover Renowned Brands</h2>
         <p className=" text-justify">
         

@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import bg from "../assets/9.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { AuthContext } from "../components/ProviderContext/AuthProvider";
+import Swal from "sweetalert2";
 
 const Register = () => {
+  const { createUser, updateUser } = useContext(AuthContext);
+
   const [registerError, setRegisterError] = useState("");
   const [showPass, setShowPass] = useState(true);
 
@@ -20,6 +24,7 @@ const Register = () => {
 
     setRegisterError("");
     formValues.reset();
+    
     // if (name.length === 0 || password.length < 0) {
     //   return;
     // } else if (password.length < 6) {
@@ -30,7 +35,25 @@ const Register = () => {
     // } else if (!/[!#$%&?]/.test(password)) {
     //   return setRegisterError(" The password don't have a special character");
     // }
+
+    createUser(email, password)
+      .then(() => {
+        updateUser(name, photoUrl)
+          .then()
+          .catch((err) => setRegisterError(err.message));
+        Swal.fire({
+          title: "Success!",
+          text: "Successfully User Created!",
+          icon: "success",
+          confirmButtonText: "Done",
+        });
+      })
+      .catch((err) => {
+        setRegisterError(err.message);
+      });
   };
+
+
   return (
     <div
       className="py-0 lg:py-8"

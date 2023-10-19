@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import bg from "../assets/9.png";
 
 const AddProduct = () => {
@@ -23,6 +24,27 @@ const AddProduct = () => {
       photo_URL,
     };
     console.log(newProduct);
+
+    fetch("http://localhost:5000/brandsProduct", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.acknowledged) {
+          Swal.fire({
+            title: "Success!",
+            text: "Product added successfully!",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+          form.reset();
+        }
+      });
   };
 
   return (
@@ -76,11 +98,11 @@ const AddProduct = () => {
                 </label>
                 <label>
                   <select name="brandName" className="select select-bordered">
-                    <option value="Nike">Nike</option>
-                    <option value="Gucci">Gucci</option>
-                    <option value="Zara">Zara</option>
-                    <option value="H&M">H&M</option>
                     <option value="Levi's">Levi's</option>
+                    <option value="H&M">H&M</option>
+                    <option value="Zara">Zara</option>
+                    <option value="Gucci">Gucci</option>
+                    <option value="Nike">Nike</option>
                   </select>
                 </label>
               </div>
@@ -130,7 +152,7 @@ const AddProduct = () => {
                 </label>
                 <label>
                   <input
-                    type="number"
+                    type="text"
                     name="rating"
                     placeholder="Enter rating"
                     className="input input-bordered rounded-lg w-full"
