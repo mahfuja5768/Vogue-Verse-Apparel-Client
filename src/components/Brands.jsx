@@ -12,7 +12,7 @@ const Brands = () => {
       .then((data) => {
         setBrands(data);
       });
-  }, []);
+  }, [brands]);
 
   return (
     <div className="my-24 px-4 max-w-[1280px] mx-auto">
