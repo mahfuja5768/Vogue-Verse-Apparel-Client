@@ -6,7 +6,7 @@
 
 ## # The features and functionalities  of my website are giving below :
 
-### ~ Firstly in the Home page there was a banner , navbar , brands , happy customer section, Frequently Asked Questions , and a footer section. 
+### ~ Firstly in the Home page there was a banner , navbar , about us , brands , happy customer section, Frequently Asked Questions , and a footer section. 
 
 ### ~ Navbar have some navs like brands, add product, my cart, faq, register, user photo and name and a toggle logout and login button. By them user can navigate another page. 
 
