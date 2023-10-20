@@ -8,7 +8,9 @@ const ProductDetails = () => {
   const { id } = useParams();
   const productId = id;
   useEffect(() => {
-    fetch(`http://localhost:5000/single-product/${productId}`)
+    fetch(
+      `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/single-product/${productId}`
+    )
       .then((res) => res.json())
       .then((data) => {
         // console.log(data[0].brandName);
@@ -37,13 +39,16 @@ const ProductDetails = () => {
     };
     console.log(addProduct);
 
-    fetch("http://localhost:5000/addProduct", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(addProduct),
-    })
+    fetch(
+      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/addProduct",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(addProduct),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

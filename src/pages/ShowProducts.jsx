@@ -11,15 +11,19 @@ const ShowProducts = () => {
   // console.log(selectedBrand);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/brandsProduct/${selectedBrand}`)
+    fetch(
+      `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct/${selectedBrand}`
+    )
       .then((res) => res.json())
       .then((data) => {
-        setProducts(data)
+        setProducts(data);
       });
   }, [selectedBrand]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/brands")
+    fetch(
+      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brands"
+    )
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

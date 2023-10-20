@@ -24,13 +24,16 @@ const AddProduct = () => {
     };
     console.log(newProduct);
 
-    fetch("http://localhost:5000/brandsProduct", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(newProduct),
-    })
+    fetch(
+      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct",
+      {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newProduct),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -47,9 +50,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div
-      className="py-0 lg:py-8"
-    >
+    <div className="py-0 lg:py-8">
       <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
@@ -82,6 +83,7 @@ const AddProduct = () => {
                     name="productName"
                     placeholder="Enter product name"
                     className="input input-bordered bg-white rounded-lg w-full"
+                    required
                   />
                 </label>
               </div>
@@ -109,6 +111,7 @@ const AddProduct = () => {
                     name="productType"
                     placeholder="Enter product type"
                     className="input input-bordered rounded-lg w-full"
+                    required
                   />
                 </label>
               </div>
@@ -122,6 +125,7 @@ const AddProduct = () => {
                     name="price"
                     placeholder="Enter price"
                     className="input input-bordered rounded-lg w-full"
+                    required
                   />
                 </label>
               </div>
@@ -135,6 +139,7 @@ const AddProduct = () => {
                     name="photo_URL"
                     placeholder="Enter product image URL"
                     className="input input-bordered rounded-lg w-full"
+                    required
                   />
                 </label>
               </div>
@@ -149,6 +154,7 @@ const AddProduct = () => {
                     name="rating"
                     placeholder="Enter rating"
                     className="input input-bordered rounded-lg w-full"
+                    required
                   />
                 </label>
               </div>
@@ -164,6 +170,7 @@ const AddProduct = () => {
                   name="description"
                   placeholder="Enter short description"
                   className="input input-bordered rounded-lg w-full"
+                  required
                 />
               </label>
             </div>

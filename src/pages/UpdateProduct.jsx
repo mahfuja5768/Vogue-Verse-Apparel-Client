@@ -32,13 +32,16 @@ const UpdateProduct = () => {
     };
     console.log(newProduct);
 
-    fetch(`http://localhost:5000/single-product/${updateProductId}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(newProduct),
-    })
+    fetch(
+      `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/single-product/${updateProductId}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newProduct),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -55,9 +58,7 @@ const UpdateProduct = () => {
   };
 
   return (
-    <div
-      className="py-0 lg:py-8"
-    >
+    <div className="py-0 lg:py-8">
       <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">

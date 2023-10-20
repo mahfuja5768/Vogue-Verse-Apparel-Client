@@ -1,12 +1,30 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 import logo from "../assets/logoName.png";
 import { Link, NavLink } from "react-router-dom";
 import { FaX } from "react-icons/fa6";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import userProfile from "../assets/user.png";
+import { AuthContext } from "./ProviderContext/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [showPass, setShowPass] = useState(true);
+
+  const { logOut, user } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          title: "Success!",
+          text: "Successfully User Logged out",
+          icon: "success",
+          confirmButtonText: "Done",
+        });
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div>
@@ -46,6 +64,18 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
+                to="/brands"
+                className={({ isActive }) =>
+                  isActive
+                    ? " underline decoration-secondary decoration-4 underline-offset-8"
+                    : "hover:text-hoverText"
+                }
+              >
+                Brands
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/addProduct"
                 className={({ isActive }) =>
                   isActive
@@ -68,6 +98,19 @@ const Navbar = () => {
                 My Cart
               </NavLink>
             </li>
+
+            <li>
+              <NavLink
+                to="/faq"
+                className={({ isActive }) =>
+                  isActive
+                    ? " underline decoration-secondary decoration-4 underline-offset-8"
+                    : "hover:text-hoverText"
+                }
+              >
+                Faq
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to="/register"
@@ -82,17 +125,59 @@ const Navbar = () => {
             </li>
           </div>
           <div className="hidden lg:flex gap-3 justify-center items-center">
-            <img src={userProfile} className="w-10 h-10 rounded-full " alt="" />
-            <Link to="/login">
-              <button className="btn bg-secondary hover:bg-hoverText text-white">
+            {user && (
+              <div className="flex items-center gap-2 justify-center mx-2">
+                {user?.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    className="w-10 h-10 rounded-full select-none"
+                    alt="user photo"
+                  />
+                ) : (
+                  <img
+                    src={userProfile}
+                    className="w-10 h-10 rounded-full select-none"
+                    alt="user photo"
+                  />
+                )}
+                <h3 className="text-black text-sm text-center mt-1">
+                  {user?.displayName}
+                </h3>
+              </div>
+            )}
+            {user && (
+              <Link
+                to="/login"
+                onClick={handleLogout}
+                className="btn bg-secondary hover:bg-hoverText text-white"
+              >
+                Log out
+              </Link>
+            )}
+            {!user && (
+              <Link
+                to="/login"
+                className="btn bg-secondary hover:bg-hoverText text-white"
+              >
                 Login
-              </button>
-            </Link>
+              </Link>
+            )}
+            {showPass ? (
+              <FaSun
+                className="text-2xl"
+                onClick={() => setShowPass(!showPass)}
+              />
+            ) : (
+              <FaMoon
+                className="text-2xl"
+                onClick={() => setShowPass(!showPass)}
+              />
+            )}
           </div>
         </div>
         <ul
-          className={`flex flex-col justify-center font-bold text-lg  text-white z-10  items-start gap-5 px-8 py-6 pb-12 bg-secondary w-full absolute duration-700 all ${
-            open ? "top-16" : "top-[-500px]"
+          className={`flex flex-col justify-center items-center font-bold text-lg  text-white z-10   gap-4 px-8 py-6 pb-12 bg-secondary w-full absolute duration-700 all ${
+            open ? "top-16" : "top-[-800px]"
           }`}
         >
           <li onClick={() => setOpen(!open)}>
@@ -105,6 +190,18 @@ const Navbar = () => {
               }
             >
               Home
+            </NavLink>
+          </li>
+          <li onClick={() => setOpen(!open)}>
+            <NavLink
+              to="/brands"
+              className={({ isActive }) =>
+                isActive
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
+              }
+            >
+              Brands
             </NavLink>
           </li>
           <li onClick={() => setOpen(!open)}>
@@ -133,6 +230,18 @@ const Navbar = () => {
           </li>
           <li onClick={() => setOpen(!open)}>
             <NavLink
+              to="/faq"
+              className={({ isActive }) =>
+                isActive
+                  ? " underline decoration-white decoration-4 underline-offset-8"
+                  : "hover:text-hoverText"
+              }
+            >
+              Faq
+            </NavLink>
+          </li>
+          <li onClick={() => setOpen(!open)}>
+            <NavLink
               to="/register"
               className={({ isActive }) =>
                 isActive
@@ -143,17 +252,67 @@ const Navbar = () => {
               Register
             </NavLink>
           </li>
-          <li onClick={() => setOpen(!open)}>
-            <NavLink
-              to="/login"
-              className={({ isActive }) =>
-                isActive
-                  ? " underline decoration-white decoration-4 underline-offset-8"
-                  : "hover:text-hoverText"
-              }
-            >
-              Login
-            </NavLink>
+         {
+          !user && <img
+          src={userProfile}
+          className="w-10 h-10 rounded-full select-none"
+          alt="user photo"
+        />
+         }
+          
+          <li >
+          {user && (
+              <div className="flex items-center gap-2 justify-center mx-2">
+                {user?.photoURL ? (
+                  <img
+                    src={user.photoURL}
+                    className="w-10 h-10 rounded-full select-none"
+                    alt="user photo"
+                  />
+                ) : (
+                  <img
+                    src={userProfile}
+                    className="w-10 h-10 rounded-full select-none"
+                    alt="user photo"
+                  />
+                )}
+                <h3 className="text-white text-sm text-center">
+                  {user?.displayName}
+                </h3>
+              </div>
+            )}
+            </li>
+            <li onClick={() => setOpen(!open)}>
+            {user && (
+              <Link
+                to="/login"
+                onClick={handleLogout}
+                className="btn bg-white hover:bg-black text-black"
+              >
+                Log out
+              </Link>
+            )}
+            {!user && (
+              <Link
+                to="/login"
+                className="btn  bg-white hover:bg-black text-black"
+              >
+                Login
+              </Link>
+            )}
+           </li>
+           <li>
+            {showPass ? (
+              <FaSun
+                className="text-2xl"
+                onClick={() => setShowPass(!showPass)}
+              />
+            ) : (
+              <FaMoon
+                className="text-2xl"
+                onClick={() => setShowPass(!showPass)}
+              />
+            )}
           </li>
         </ul>
       </nav>

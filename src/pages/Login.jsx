@@ -1,10 +1,17 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { AuthContext } from "../components/ProviderContext/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [loginError, setLoginError] = useState("");
   const [showPass, setShowPass] = useState(true);
+  const {signInUser, googleSign} = useContext(AuthContext)
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(location);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +24,40 @@ const Login = () => {
 
     setLoginError("");
     formValues.reset();
+    signInUser(email, password)
+      .then((res) => {
+        console.log(res.user.displayName);
+        if(res.user){
+          Swal.fire({
+            title: "Success!",
+            text: "Successfully User Logged in",
+            icon: "success",
+            confirmButtonText: "Done",
+          });
+          return navigate(location?.state ? location.state : '/')
+        }
+      })
+      .catch((err) => {
+        setLoginError(err.message);
+      });
   };
+
+  const handleGoogle = () => {
+    googleSign()
+      .then(() => {
+        Swal.fire({
+          title: "Success!",
+          text: "Successfully User Logged in",
+          icon: "success",
+          confirmButtonText: "Done",
+        });
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((err) => {
+        setLoginError(err.message);
+      });
+  };
+
   return (
     <div
       className="py-0 lg:py-8"
@@ -91,6 +131,16 @@ const Login = () => {
                 value="Login now"
               />
             </form>
+            <h2 className="text-center my-1">Or</h2>
+            <button
+                onClick={handleGoogle}
+                className="btn w-full cursor-pointer hover:bg-secondary bg-hoverText text-white"
+              >
+                <span>With Google</span>
+                <span>
+                  <FaGoogle></FaGoogle>
+                </span>
+              </button>
           </div>
         </div>
       </div>

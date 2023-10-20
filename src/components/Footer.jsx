@@ -21,7 +21,7 @@ const Footer = () => {
                 </p>
                 <p className="flex items-center gap-2 ms-5">
                   <FaMailBulk className="text-lg"></FaMailBulk>{" "}
-                  <span>abc@company.com</span>
+                  <span>@vogueverseapparel.com</span>
                 </p>
               </div>
             </div>

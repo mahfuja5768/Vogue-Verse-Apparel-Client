@@ -5,16 +5,18 @@ const MyCart = () => {
   const [myAddedProducts, setMyAddedProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/addProduct")
+    fetch(
+      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/addProduct"
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setMyAddedProducts(data);
       });
-  }, []);
+  }, [myAddedProducts]);
 
   return (
-    <div className="max-w-[1280px] mx-auto my-12">
+    <div className="max-w-[1280px] mx-auto my-12 px-4">
       {!myAddedProducts.length ? (
         <div className="flex flex-col justify-center items-center gap-5 relative">
           <img
