@@ -2,6 +2,7 @@ import { FaFacebookF, FaLinkedin, FaMailBulk, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logoName.png";
 import { FaPhone } from "react-icons/fa6";
+import Marquee from 'react-fast-marquee';
 
 const Footer = () => {
   return (
@@ -14,15 +15,21 @@ const Footer = () => {
             <div className="md:grid-cols-2">
               <div className="flex flex-col gap-3 ">
                 <img src={logo} alt="" className="mb-3" />
+                <Marquee speed={40} >
                 <h3 className="ms-5">QUESTION OR FEEDBACK?</h3>
+                </Marquee>
+                <Marquee speed={40} >
                 <p className="flex items-center gap-2 ms-5">
                   <FaPhone className="text-lg"></FaPhone>{" "}
                   <span>+099 222 111</span>
                 </p>
+                </Marquee>
+                <Marquee speed={40} >
                 <p className="flex items-center gap-2 ms-5">
                   <FaMailBulk className="text-lg"></FaMailBulk>{" "}
                   <span>@vogueverseapparel.com</span>
                 </p>
+                </Marquee>
               </div>
             </div>
 

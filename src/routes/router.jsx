@@ -51,7 +51,7 @@ const router = createBrowserRouter([
         path: "/productDetails/:id",
         loader: ({ params }) =>
           fetch(
-            `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct/${params.id}`
+            `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brandsProduct/${params.id}`
           ),
         element: (
           <PrivateRoute>
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
         path: "/updateProduct/:id",
         loader: ({ params }) =>
           fetch(
-            `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/single-product/${params.id}`
+            `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/single-product/${params.id}`
           ),
         element: (
           <PrivateRoute>
@@ -75,7 +75,7 @@ const router = createBrowserRouter([
         path: "/showProducts/:brandName",
         loader: ({ params }) =>
           fetch(
-            `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct/${params.brandName}`
+            `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brandsProduct/${params.brandName}`
           ),
         element: <ShowProducts></ShowProducts>,
       },

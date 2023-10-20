@@ -7,12 +7,12 @@ const ShowProduct = ({ product }) => {
     product;
   return (
     <div>
-      <div className="bg-gradient-to-t from-yellow-100 shadow-lg p-5 rounded-3xl text-start mb-5">
+      <div className="bg-gradient-to-t h-[600px] from-yellow-100 shadow-lg p-5 rounded-3xl text-start mb-5">
         <div className="-mt-12">
           <img
             src={image}
             alt=""
-            className="w-full h-[300px] mb-5  p-2 rounded-3xl "
+            className="w-full h-[210px] mb-5  p-2 rounded-2xl "
           />
         </div>
         <h2 className="text-xl font-semibold">Product Name: {name}</h2>

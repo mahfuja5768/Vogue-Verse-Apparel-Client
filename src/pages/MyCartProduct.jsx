@@ -19,7 +19,7 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/addProduct/${_id}`,
+          `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/addProduct/${_id}`,
           {
             method: "DELETE",
           }

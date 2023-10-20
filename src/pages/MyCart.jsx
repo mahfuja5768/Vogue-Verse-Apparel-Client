@@ -6,7 +6,7 @@ const MyCart = () => {
 
   useEffect(() => {
     fetch(
-      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/addProduct"
+      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/addProduct"
     )
       .then((res) => res.json())
       .then((data) => {

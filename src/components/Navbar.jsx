@@ -252,16 +252,16 @@ const Navbar = () => {
               Register
             </NavLink>
           </li>
-         {
-          !user && <img
-          src={userProfile}
-          className="w-10 h-10 rounded-full select-none"
-          alt="user photo"
-        />
-         }
-          
-          <li >
-          {user && (
+          {!user && (
+            <img
+              src={userProfile}
+              className="w-10 h-10 rounded-full select-none"
+              alt="user photo"
+            />
+          )}
+
+          <li>
+            {user && (
               <div className="flex items-center gap-2 justify-center mx-2">
                 {user?.photoURL ? (
                   <img
@@ -281,8 +281,8 @@ const Navbar = () => {
                 </h3>
               </div>
             )}
-            </li>
-            <li onClick={() => setOpen(!open)}>
+          </li>
+          <li onClick={() => setOpen(!open)}>
             {user && (
               <Link
                 to="/login"
@@ -300,8 +300,8 @@ const Navbar = () => {
                 Login
               </Link>
             )}
-           </li>
-           <li>
+          </li>
+          <li>
             {showPass ? (
               <FaSun
                 className="text-2xl"

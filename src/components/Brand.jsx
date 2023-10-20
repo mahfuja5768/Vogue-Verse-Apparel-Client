@@ -17,7 +17,7 @@ const Brand = ({ brand }) => {
           <img
             src={brand.brandImage}
             alt=""
-            className="w-full h-[180px]  p-2 rounded-3xl "
+            className="w-[150px] md:w-[200px] mx-auto h-[150px] md:h-[200px]  p-2 rounded-3xl "
           />
         </div>
         <h2 className="text-xl py-2 font-semibold">

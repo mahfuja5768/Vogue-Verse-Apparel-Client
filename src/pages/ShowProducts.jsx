@@ -12,7 +12,7 @@ const ShowProducts = () => {
 
   useEffect(() => {
     fetch(
-      `https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct/${selectedBrand}`
+      `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brandsProduct/${selectedBrand}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -22,7 +22,7 @@ const ShowProducts = () => {
 
   useEffect(() => {
     fetch(
-      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brands"
+      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brands"
     )
       .then((res) => res.json())
       .then((data) => {

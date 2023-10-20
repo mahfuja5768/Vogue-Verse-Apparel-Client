@@ -25,7 +25,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     fetch(
-      "https://vogue-verse-apparel-server-glzxxnigl-mahfuja5768.vercel.app/brandsProduct",
+      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brandsProduct",
       {
         method: "POST",
         headers: {
