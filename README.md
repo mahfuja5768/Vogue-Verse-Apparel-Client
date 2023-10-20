@@ -12,6 +12,8 @@
 
 ### ~ Banner have some text and a button which navigate user in the brands page. And also have a banner photo relevant to fashion.
 
+### ~ Then a about us section.
+
 
 ### ~ In the brands section there are 6 type of brands . Clicking on the brand card button it will navigate user in that selected brand products page. In that page there is a advertisement products in a slider and some products of that selected brands.
 
