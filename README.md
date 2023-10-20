@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="60" src='./src/assets/logoName.png'>
+  <img style="background-color: #f0f0f0; padding: 10px; border-radius: 10px" height="60" src='./src/assets/logoName.png'>
   <h1>Website Name : Vogue-Verse-Apparel</h1>
   <h2>Live link : https://vogue-verse-apparel-client-pfkv1wpjr-mahfuja5768.vercel.app/</h2>
 </div>
