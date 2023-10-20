@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <div className="max-w-[1280px] mx-auto px-4 my-20">
+    <div className="max-w-[1280px] mx-auto px-4 my-24">
       <div className="flex justify-center items-center flex-col my-5">
         <h2 className="md:text-4xl text-2xl font-bold  ">
           Explore Our Frequently Asked Questions
