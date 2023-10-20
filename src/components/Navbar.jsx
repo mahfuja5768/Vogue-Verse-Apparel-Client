@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
           <div>
             <Link to="/">
-              <img src={logo} alt="" className="w-48 h-12" />
+              <img src={logo} alt="" className="lg:w-52 w-48 lg:h-16  h-14" />
             </Link>
           </div>
 
@@ -262,11 +262,11 @@ const Navbar = () => {
 
           <li>
             {user && (
-              <div className="flex items-center gap-2 justify-center mx-2">
+              <div className="flex flex-col items-center gap-2 justify-center mx-2">
                 {user?.photoURL ? (
                   <img
                     src={user.photoURL}
-                    className="w-10 h-10 rounded-full select-none"
+                    className="lg:w-10 lg:h-10 w-16 h-16 rounded-full select-none"
                     alt="user photo"
                   />
                 ) : (
@@ -276,7 +276,7 @@ const Navbar = () => {
                     alt="user photo"
                   />
                 )}
-                <h3 className="text-white text-sm text-center">
+                <h3 className="text-white lg:text-sm text-lg text-center">
                   {user?.displayName}
                 </h3>
               </div>
