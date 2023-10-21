@@ -31,7 +31,8 @@ const MyCart = () => {
       ) : (
         <>
           <div className="flex flex-col justify-center items-center my-12">
-            <h2 className="text-3xl font-bold mb-3">Your Shopping Cart</h2>
+            <h2 className="lg:text-5xl text-4xl font-bold mb-3">Your Shopping Cart</h2>
+            <div className="border-b-secondary border-b-4 w-24 my-2 mb-12 mx-auto"></div>
             <p>
               Welcome to your shopping cart! Here you can review and manage the
               items you've added while shopping. Take your time to make sure

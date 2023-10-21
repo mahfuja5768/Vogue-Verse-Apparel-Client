@@ -3,11 +3,11 @@ import React from "react";
 const HappyCustomers = () => {
   return (
     <div className="my-24 max-w-[1280px] mx-auto px-4">
-      <div className="flex justify-center items-center flex-col">
-        <h2 className="md:text-4xl text-2xl font-bold my-8">
+      <div className="flex justify-center items-center flex-col ">
+        <h2 className="md:text-4xl text-3xl text-center font-bold ">
           Happy Customers, Happy Us
         </h2>
-
+        <div className="border-b-secondary border-b-4 w-28 my-3 mb-8 mx-auto"></div>
         <p>
           At Vogue-Verse-Apparel, our mission is to provide our customers with a
           delightful shopping experience that extends beyond just acquiring

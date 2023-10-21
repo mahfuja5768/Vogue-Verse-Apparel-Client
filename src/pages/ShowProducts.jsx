@@ -36,17 +36,18 @@ const ShowProducts = () => {
   }, [selectedBrand]);
 
   return (
-    <div className="my-24 px-4 max-w-[1280px] mx-auto">
+    <div className="my-24 px-6 max-w-[1280px] mx-auto">
       {!products.length ? (
-        <div className="flex flex-col justify-center items-center gap-5 relative">
+        <div className="flex flex-col justify-center items-center gap-5">
+          <h2 className="md:text-3xl text-2xl font-bold text-center">
+            Sorry, there are currently no products available.
+          </h2>
           <img
             src={"https://i.ibb.co/YytgHf5/empty.gif"}
             className="h-[400px]"
             alt=""
           />
-          <h2 className="md:text-3xl text-2xl absolute text-secondary top-12 font-bold text-center">
-            Sorry, there are currently no products available.
-          </h2>
+          
         </div>
       ) : (
         <>
@@ -95,7 +96,7 @@ const ShowProducts = () => {
             </div>
           </div>
           <div className="mt-20">
-            <h2 className="text-center text-4xl text-secondary font-bold mb-4">
+            <h2 className="text-center text-4xl font-bold mb-4">
               Explore Our Latest Collections of {selectedBrand}
             </h2>
             <p className=" text-justify">

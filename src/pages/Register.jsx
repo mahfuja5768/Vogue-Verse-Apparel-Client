@@ -9,7 +9,7 @@ const Register = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   const [registerError, setRegisterError] = useState("");
   const [showPass, setShowPass] = useState(true);
@@ -76,14 +76,15 @@ const Register = () => {
       });
   };
   return (
-    <div className="py-0 lg:py-8 ">
+    <div className="py-0 lg:py-8 px-4">
       <div className="py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
-        <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12 ">
+        <h1 className="lg:text-5xl text-4xl font-bold text-center  ">
           Register Now
         </h1>
+        <div className="border-b-secondary border-b-4 w-24 my-3 mb-12 mx-auto"></div>
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center gap-6">
           <div className="lg:col-span-2">
-            <img
+            <img className="mx-auto"
               src={
                 "https://i.ibb.co/yFcRx9F/login-concept-illustration-65141-421-removebg-preview.png"
               }

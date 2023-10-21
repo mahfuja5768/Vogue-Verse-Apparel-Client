@@ -37,7 +37,7 @@ const ProductDetails = () => {
       rating,
       image,
     };
-    console.log(addProduct);
+    // console.log(addProduct);
 
     fetch(
       "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/addProduct",
@@ -51,7 +51,7 @@ const ProductDetails = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.acknowledged) {
           Swal.fire({
             title: "Success!",
@@ -64,9 +64,9 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="max-w-[1280px] mx-auto my-20">
-      <div className="md:grid md:grid-cols-4 gap-5 items-center">
-        <div className="flex md:col-span-2">
+    <div className="max-w-[1280px] mx-auto my-20 px-4">
+      <div className="lg:grid lg:grid-cols-4 gap-5 items-center">
+        <div className="flex lg:col-span-2">
           <img
             src={product.image}
             alt=""
@@ -74,22 +74,22 @@ const ProductDetails = () => {
           />
         </div>
         <div className=" p-5">
-          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-5 p-3">
             Product Name: {product.name}
           </h2>
-          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-5 p-3">
             Brand Name: {product.brandName}
           </h2>
-          <p className="text-lg  bg-lightPrimary text-black rounded-lg mb-2 p-3">
+          <p className="text-lg  bg-lightPrimary text-black rounded-lg mb-5 p-3">
             Type: {product.type}
           </p>
 
-          <p className="text-lg bg-lightPrimary text-black rounded-lg mb-2 p-3 ">
+          <p className="text-lg bg-lightPrimary text-black rounded-lg mb-5 p-3 ">
             <span className="font-medium"> Description:</span>{" "}
             {product.description}
           </p>
 
-          <div className="flex  gap-4 my-2 bg-lightPrimary text-black rounded-lg mb-2 p-3">
+          <div className="flex  gap-4 my-2 bg-lightPrimary text-black rounded-lg mb-5 p-3">
             <p className="text-lg font-semibold">Rating: {product.rating}</p>
             <p className="text-lg font-semibold">Price: ${product.price}</p>
           </div>

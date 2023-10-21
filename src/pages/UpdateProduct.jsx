@@ -58,12 +58,13 @@ const UpdateProduct = () => {
   };
 
   return (
-    <div className="py-0 lg:py-8">
+    <div className="py-0 lg:py-8 px-5">
       <div className=" py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
             Product Update Form
           </h1>
+          <div className="border-b-secondary border-b-4 w-28 my-3 mb-3 mx-auto"></div>
           <p className="w-full lg:w-3/4   mt-3 text-justify">
             At Vogue-Verse Apparel, we believe that fashion should be a
             reflection of individual style. Showcase your unique creations or
@@ -75,7 +76,7 @@ const UpdateProduct = () => {
         <div className="flex justify-around lg:items-center gap-6 lg:flex-row flex-col">
           <div className="w-full md:w-1/2  mx-auto">
             <img
-              src={"https://i.ibb.co/tCm3kh3/add-removebg-preview.png"}
+              src={"https://i.ibb.co/fnRcdbV/al.png"}
               alt=""
             />
           </div>
@@ -91,7 +92,7 @@ const UpdateProduct = () => {
                     type="text"
                     name="name"
                     placeholder="Enter product name"
-                    className="input input-bordered bg-white rounded-lg w-full"
+                    className="input input-bordered text-black rounded-lg w-full"
                   />
                 </label>
               </div>
@@ -102,7 +103,7 @@ const UpdateProduct = () => {
                 <label>
                   <select
                     name="brandName"
-                    className="select select-bordered"
+                    className="select select-bordered text-black"
                     defaultValue={brandName}
                   >
                     <option value="Levi's">Levi's</option>
@@ -123,7 +124,7 @@ const UpdateProduct = () => {
                     type="text"
                     name="type"
                     placeholder="Enter product type"
-                    className="input input-bordered rounded-lg w-full"
+                    className="input input-bordered text-black rounded-lg w-full"
                   />
                 </label>
               </div>
@@ -137,7 +138,7 @@ const UpdateProduct = () => {
                     type="number"
                     name="price"
                     placeholder="Enter price"
-                    className="input input-bordered rounded-lg w-full"
+                    className="input input-bordered text-black rounded-lg w-full"
                   />
                 </label>
               </div>
@@ -151,7 +152,7 @@ const UpdateProduct = () => {
                     type="text"
                     name="image"
                     placeholder="Enter product image URL"
-                    className="input input-bordered rounded-lg w-full"
+                    className="input input-bordered text-black rounded-lg w-full"
                   />
                 </label>
               </div>
@@ -166,7 +167,7 @@ const UpdateProduct = () => {
                     type="text"
                     name="rating"
                     placeholder="Enter rating"
-                    className="input input-bordered rounded-lg w-full"
+                    className="input input-bordered text-black rounded-lg w-full"
                   />
                 </label>
               </div>
@@ -182,7 +183,7 @@ const UpdateProduct = () => {
                   type="text"
                   name="description"
                   placeholder="Enter short description"
-                  className="input input-bordered rounded-lg w-full"
+                  className="input input-bordered text-black rounded-lg w-full"
                 />
               </label>
             </div>

@@ -2,9 +2,10 @@ const Faq = () => {
   return (
     <div className="max-w-[1280px] mx-auto px-4 my-32 ">
       <div className="flex justify-center items-center flex-col my-5 ">
-        <h2 className="md:text-4xl text-2xl font-bold  ">
+        <h2 className="md:text-4xl text-2xl font-bold text-center ">
           Explore Our Frequently Asked Questions
         </h2>
+        <div className="border-b-secondary border-b-4 w-28 my-4 mb-3 mx-auto"></div>
         <p className="my-5">
           Welcome to our FAQ section, where we're here to address your most
           common queries and concerns. We understand that navigating a website

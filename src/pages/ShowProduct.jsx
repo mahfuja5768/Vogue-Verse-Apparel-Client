@@ -6,15 +6,15 @@ const ShowProduct = ({ product }) => {
   const { brandName, description, image, name, price, rating, type, _id } =
     product;
   return (
-    <div>
-      <div className=" h-[600px] shadow-lg p-5 rounded-3xl text-start mb-5">
-        <div className="-mt-12">
+      <div className=" h-[640px] space-y-1 text-black bg-gradient-to-t from-lightPrimary to-[#fafaf9]  shadow-lg  rounded-3xl text-start mb-5">
+        <div>
           <img
             src={image}
             alt=""
-            className="w-full h-[210px] mb-5  p-2 rounded-2xl "
+            className="w-full h-[210px]  rounded-t-2xl "
           />
         </div>
+        <div className="p-5">
         <h2 className="text-xl font-semibold">Product Name: {name}</h2>
         <h2 className="text-xl font-semibold">Brand Name: {brandName}</h2>
         <p className="text-lg ">Type: {type}</p>
@@ -36,7 +36,7 @@ const ShowProduct = ({ product }) => {
 
         <div className="flex justify-between flex-col">
           <Link to={`/productDetails/${_id}`}>
-            <button className="btn bg-secondary my-2 w-full hover:bg-hoverText text-white">
+            <button className="btn bg-secondary border-none my-2 w-full hover:bg-hoverText text-white">
               <span className="me-1">
                 <FaEye></FaEye>
               </span>
@@ -44,7 +44,7 @@ const ShowProduct = ({ product }) => {
             </button>
           </Link>
           <Link to={`/updateProduct/${_id}`}>
-          <button  className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white">
+          <button  className="btn bg-secondary border-none my-2 w-full  hover:bg-hoverText text-white">
             <span>
               <FaPen></FaPen>
             </span>
@@ -52,8 +52,8 @@ const ShowProduct = ({ product }) => {
           </button>
           </Link>
         </div>
+        </div>
       </div>
-    </div>
   );
 };
 

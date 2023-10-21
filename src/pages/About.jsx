@@ -2,6 +2,7 @@ const About = () => {
   return (
     <div className=" max-w-[1280px] mx-auto px-4 my-12">
       <h2 className="text-3xl md:text-4xl font-bold text-center">About Us</h2>
+      <div className="border-b-secondary border-b-4 w-28 my-2 mb-3 mx-auto"></div>
       <p className="text-center mb-8 mt-5">
         We're here to empower you to express your unique style and celebrate
         individuality.{" "}

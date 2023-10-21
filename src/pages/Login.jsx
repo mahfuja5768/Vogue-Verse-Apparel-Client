@@ -59,14 +59,15 @@ const Login = () => {
   };
 
   return (
-    <div className="py-0 lg:py-8">
+    <div className="py-0 lg:py-8 px-4">
       <div className=" py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
-        <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12">
+        <h1 className="lg:text-5xl text-4xl font-bold text-center">
           Login Now
         </h1>
+        <div className="border-b-secondary border-b-4 w-24 my-5 mb-12 mx-auto"></div>
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center gap-6">
           <div className="lg:col-span-2">
-            <img
+            <img className="mx-auto"
               src={
                 "https://i.ibb.co/khLqWVW/forgot-password-concept-illustration-114360-1123-removebg-preview.png"
               }

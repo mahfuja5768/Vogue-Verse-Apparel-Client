@@ -17,7 +17,8 @@ const Brands = () => {
   return (
     <div className="my-24 px-4 max-w-[1280px] mx-auto">
       <div className="text-center">
-        <h2 className="text-4xl  font-bold mb-4">Discover Renowned Brands</h2>
+        <h2 className="md:text-4xl  text-3xl  font-bold mb-4">Discover Renowned Brands</h2>
+        <div className="border-b-secondary border-b-4 w-28 my-2 mb-3 mx-auto"></div>
         <p className=" text-justify">
           Vogue-Verse Apparel is proud to feature a curated selection of some of
           the most iconic and trusted fashion brands in the industry. Explore a

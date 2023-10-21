@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import userProfile from "../assets/user.png";
 import { AuthContext } from "./ProviderContext/AuthProvider";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,9 +15,23 @@ const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
 
   const handleToggleTheme = () => {
-    document.body.classList.toggle("dark-theme");
+    const isDarkTheme = document.body.classList.contains("dark-theme");
+    document.body.classList.toggle("dark-theme", !isDarkTheme);
+    const themePreference = isDarkTheme ? "light" : "dark";
+    localStorage.setItem("themePreference", themePreference);
     setShowIcon(!showIcon);
   };
+
+  useEffect(() => {
+    const themePreference = localStorage.getItem("themePreference");
+
+    // Apply the theme preference if it exists
+    if (themePreference === "dark") {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
+  }, []);
 
   const handleLogout = () => {
     logOut()
@@ -42,15 +57,19 @@ const Navbar = () => {
             {
               // open ? 'close icon' : 'open icon'
               open ? (
-                <FaX className="text-2xl "></FaX>
+                <FaX className="text-2xl cursor-pointer"></FaX>
               ) : (
-                <FaBars className="text-2xl "></FaBars>
+                <FaBars className="text-2xl cursor-pointer"></FaBars>
               )
             }
           </div>
           <div>
             <Link to="/">
-              <img src={logo} alt="" className="lg:w-52 w-48 lg:h-16 bg-white h-14" />
+              <img
+                src={logo}
+                alt=""
+                className="lg:w-52 w-48 lg:h-16 bg-white h-14"
+              />
             </Link>
           </div>
 
@@ -170,9 +189,15 @@ const Navbar = () => {
 
             <span>
               {showIcon ? (
-                <FaMoon className="text-2xl cursor-pointer" onClick={handleToggleTheme} />
-                ) : (
-                  <FaSun className="text-2xl cursor-pointer" onClick={handleToggleTheme} />
+                <FaMoon
+                  className="text-2xl cursor-pointer"
+                  onClick={handleToggleTheme}
+                />
+              ) : (
+                <FaSun
+                  className="text-2xl cursor-pointer"
+                  onClick={handleToggleTheme}
+                />
               )}
             </span>
           </div>
@@ -301,11 +326,19 @@ const Navbar = () => {
             )}
           </li>
           <li>
-            {/* {showIcon ? (
-              <FaSun className="text-2xl"  />
-            ) : (
-              <FaMoon className="text-2xl" />
-            )} */}
+            <span onClick={() => setOpen(!open)}>
+              {showIcon ? (
+                <FaMoon
+                  className="text-2xl cursor-pointer"
+                  onClick={handleToggleTheme}
+                />
+              ) : (
+                <FaSun
+                  className="text-2xl cursor-pointer"
+                  onClick={handleToggleTheme}
+                />
+              )}
+            </span>
           </li>
         </ul>
       </nav>

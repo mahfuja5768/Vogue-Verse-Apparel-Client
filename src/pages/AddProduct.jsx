@@ -50,12 +50,13 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="py-0 lg:py-8">
+    <div className="py-0 lg:py-8 px-4">
       <div className="py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
             Add Product
           </h1>
+          <div className="border-b-secondary border-b-4 w-28 my-3 mb-3 mx-auto"></div>
           <p className="w-full lg:w-3/4   mt-3 text-justify">
             At Vogue-Verse Apparel, we believe that fashion should be a
             reflection of individual style. Showcase your unique creations or
@@ -92,7 +93,7 @@ const AddProduct = () => {
                   <span className="text-xl ">Brand Name</span>
                 </label>
                 <label>
-                  <select name="brandName" className="select select-bordered">
+                  <select name="brandName" className="select select-bordered text-black">
                     <option value="Levi's">Levi's</option>
                     <option value="H&M">H&M</option>
                     <option value="Zara">Zara</option>

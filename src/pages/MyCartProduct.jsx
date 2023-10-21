@@ -42,7 +42,7 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
 
   return (
     <div>
-      <div className=" h-[660px]  bg-gradient-to-t from-lightPrimary to-[#fafaf9]  shadow-lg rounded-3xl text-start mb-5 flex flex-col space-y-5">
+      <div className=" h-[660px]  bg-gradient-to-t from-lightPrimary to-[#fafaf9]  shadow-lg rounded-3xl text-start mb-5 flex flex-col space-y-5 text-black">
         <div className="border rounded-t-3xl border-lightPrimary mb-2 ">
           <img
             src={image}
