@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "./../components/ProviderContext/AuthProvider";
 
 const ProductDetails = () => {
   const [product, setProduct] = useState({});
-
+  const { user } = useContext(AuthContext);
+  const email = user.email;
   const { id } = useParams();
   const productId = id;
   useEffect(() => {
     fetch(
-      `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/single-product/${productId}`
+      `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/single-product/${productId}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -36,11 +38,12 @@ const ProductDetails = () => {
       description,
       rating,
       image,
+      email,
     };
     // console.log(addProduct);
 
     fetch(
-      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/addProduct",
+      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/addProduct",
       {
         method: "POST",
         headers: {

@@ -1,19 +1,26 @@
 import { useEffect, useState } from "react";
 import MyCartProduct from "./MyCartProduct";
+import { useContext } from "react";
+import { AuthContext } from "../components/ProviderContext/AuthProvider";
 
 const MyCart = () => {
   const [myAddedProducts, setMyAddedProducts] = useState([]);
+  const { user } = useContext(AuthContext);
+  const currentUserEmail = user.email;
 
   useEffect(() => {
     fetch(
-      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/addProduct"
+      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/addProduct"
     )
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
-        setMyAddedProducts(data);
+        const currentUserProducts = data.filter(
+          (product) => product.email === currentUserEmail
+        );
+        setMyAddedProducts(currentUserProducts);
       });
-  }, [myAddedProducts]);
+  }, [currentUserEmail]);
 
   return (
     <div className="max-w-[1280px] mx-auto my-12 px-4">
@@ -31,7 +38,9 @@ const MyCart = () => {
       ) : (
         <>
           <div className="flex flex-col justify-center items-center my-12">
-            <h2 className="lg:text-5xl text-4xl font-bold mb-3">Your Shopping Cart</h2>
+            <h2 className="lg:text-5xl text-4xl font-bold mb-3">
+              Your Shopping Cart
+            </h2>
             <div className="border-b-secondary border-b-4 w-24 my-2 mb-12 mx-auto"></div>
             <p>
               Welcome to your shopping cart! Here you can review and manage the

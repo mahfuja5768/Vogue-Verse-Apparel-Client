@@ -24,6 +24,8 @@ const Login = () => {
 
     setLoginError("");
     formValues.reset();
+
+
     signInUser(email, password)
       .then((res) => {
         console.log(res.user.displayName);

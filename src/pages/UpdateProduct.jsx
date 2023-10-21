@@ -33,7 +33,7 @@ const UpdateProduct = () => {
     console.log(newProduct);
 
     fetch(
-      `https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/single-product/${updateProductId}`,
+      `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/single-product/${updateProductId}`,
       {
         method: "PUT",
         headers: {
@@ -75,10 +75,7 @@ const UpdateProduct = () => {
         </div>
         <div className="flex justify-around lg:items-center gap-6 lg:flex-row flex-col">
           <div className="w-full md:w-1/2  mx-auto">
-            <img
-              src={"https://i.ibb.co/fnRcdbV/al.png"}
-              alt=""
-            />
+            <img src={"https://i.ibb.co/fnRcdbV/al.png"} alt="" />
           </div>
           <form onSubmit={handleAddProduct}>
             <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-5  gap-2">

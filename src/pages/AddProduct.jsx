@@ -25,7 +25,7 @@ const AddProduct = () => {
     console.log(newProduct);
 
     fetch(
-      "https://vogue-verse-apparel-server-mlngrw8wo-mahfuja5768.vercel.app/brandsProduct",
+      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/brandsProduct",
       {
         method: "POST",
         headers: {
@@ -93,7 +93,10 @@ const AddProduct = () => {
                   <span className="text-xl ">Brand Name</span>
                 </label>
                 <label>
-                  <select name="brandName" className="select select-bordered text-black">
+                  <select
+                    name="brandName"
+                    className="select select-bordered text-black"
+                  >
                     <option value="Levi's">Levi's</option>
                     <option value="H&M">H&M</option>
                     <option value="Zara">Zara</option>
