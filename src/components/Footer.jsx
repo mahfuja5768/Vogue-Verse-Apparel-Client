@@ -12,7 +12,7 @@ const Footer = () => {
           <div className=" max-w-[1280px] mx-auto py-12 md:py-16  grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="md:grid-cols-2">
               <div className="flex flex-col gap-3 ">
-                <img src={logo} alt="" className="mb-3 bg-white w-52 h-24" />
+                <Link to='/'><img src={logo} alt="" className="mb-3 bg-white w-52 h-24" /></Link>
                 <Marquee speed={40}>
                   <h3 className="ms-5">QUESTION OR FEEDBACK?</h3>
                 </Marquee>

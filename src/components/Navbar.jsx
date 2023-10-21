@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="mb-12 shadow shadow-base">
+      <nav className="shadow shadow-base">
         <div className="max-w-[1280px] mx-auto lg:grid lg:grid-cols-4 lg:gap-2 flex items-center flex-row-reverse p-4 justify-between lg:flex-row gap-6">
           <div
             onClick={() => setOpen(!open)}
