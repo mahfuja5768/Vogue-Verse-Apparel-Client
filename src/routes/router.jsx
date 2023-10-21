@@ -27,10 +27,10 @@ const router = createBrowserRouter([
         path: "/faq",
         element: <Faq></Faq>,
       },
-      // {
-      //   path: "/brands",
-      //   element: <Brands></Brands>,
-      // },
+      {
+        path: "/brands",
+        element: <Brands></Brands>,
+      },
       {
         path: "/addProduct",
         element: (
