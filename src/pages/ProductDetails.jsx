@@ -70,26 +70,26 @@ const ProductDetails = () => {
           <img
             src={product.image}
             alt=""
-            className="w-full h-[300px] mb-5  p-2 rounded-3xl "
+            className="w-full h-[300px] mb-5 border-4 rounded-full border-lightPrimary"
           />
         </div>
         <div className=" p-5">
-          <h2 className="text-xl font-semibold bg-hoverText text-black rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-2 p-3">
             Product Name: {product.name}
           </h2>
-          <h2 className="text-xl font-semibold bg-hoverText text-black rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-lightPrimary text-black rounded-lg mb-2 p-3">
             Brand Name: {product.brandName}
           </h2>
-          <p className="text-lg  bg-hoverText text-black rounded-lg mb-2 p-3">
+          <p className="text-lg  bg-lightPrimary text-black rounded-lg mb-2 p-3">
             Type: {product.type}
           </p>
 
-          <p className="text-lg bg-hoverText text-black rounded-lg mb-2 p-3 ">
+          <p className="text-lg bg-lightPrimary text-black rounded-lg mb-2 p-3 ">
             <span className="font-medium"> Description:</span>{" "}
             {product.description}
           </p>
 
-          <div className="flex  gap-4 my-2 bg-hoverText text-black rounded-lg mb-2 p-3">
+          <div className="flex  gap-4 my-2 bg-lightPrimary text-black rounded-lg mb-2 p-3">
             <p className="text-lg font-semibold">Rating: {product.rating}</p>
             <p className="text-lg font-semibold">Price: ${product.price}</p>
           </div>

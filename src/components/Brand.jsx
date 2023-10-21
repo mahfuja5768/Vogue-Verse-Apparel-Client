@@ -12,7 +12,7 @@ const Brand = ({ brand }) => {
 
   return (
     <div>
-      <div className="bg-lightPrimary bg-gradient-to-t from-lightPrimary to-[#F1F0E8] shadow-lg p-5 rounded-3xl text-center mb-5">
+      <div className="bg-gradient-to-t from-lightPrimary to-[#fafaf9] shadow-lg p-5 rounded-3xl text-center mb-5">
         <div className="">
           <img
             src={brand.brandImage}

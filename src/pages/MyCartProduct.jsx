@@ -42,34 +42,36 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
 
   return (
     <div>
-      <div className="bg-gradient-to-t from-yellow-100 shadow-lg p-5 rounded-3xl text-start mb-5">
-        <div className="-mt-12">
+      <div className=" h-[660px]  bg-gradient-to-t from-lightPrimary to-[#fafaf9]  shadow-lg rounded-3xl text-start mb-5 flex flex-col space-y-5">
+        <div className="border rounded-t-3xl border-lightPrimary mb-2 ">
           <img
             src={image}
             alt=""
-            className="w-full h-[300px] mb-5  p-2 rounded-3xl "
+            className="w-full  h-[210px] rounded-t-3xl "
           />
         </div>
-        <h2 className="text-xl font-semibold">Product Name: {name}</h2>
-        <h2 className="text-xl font-semibold">Brand Name: {brandName}</h2>
-        <p className="text-lg ">Type: {type}</p>
-        <p className="text-lg ">
-          <span className="font-medium"> Description:</span> {description}
-        </p>
+        <div className="p-5">
+          <h2 className="text-xl font-semibold">Product Name: {name}</h2>
+          <h2 className="text-xl font-semibold">Brand Name: {brandName}</h2>
+          <p className="text-lg ">Type: {type}</p>
+          <p className="text-lg ">
+            <span className="font-medium"> Description:</span> {description}
+          </p>
 
-        <div className="flex  gap-4 my-2">
-          <p className="text-lg font-semibold">Rating: {rating}</p>
-          <p className="text-lg font-semibold">Price: ${price}</p>
+          <div className="flex  gap-4 my-2">
+            <p className="text-lg font-semibold">Rating: {rating}</p>
+            <p className="text-lg font-semibold">Price: ${price}</p>
+          </div>
+          <button
+            onClick={() => handleDelete(_id)}
+            className="btn bg-secondary my-2 w-full border-none hover:bg-hoverText text-white"
+          >
+            <span>
+              <FaTrash></FaTrash>
+            </span>
+            <span className="ms-1">Delete</span>
+          </button>
         </div>
-        <button
-          onClick={() => handleDelete(_id)}
-          className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white"
-        >
-          <span>
-            <FaTrash></FaTrash>
-          </span>
-          <span className="ms-1">Delete</span>
-        </button>
       </div>
     </div>
   );
