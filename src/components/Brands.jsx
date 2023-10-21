@@ -1,18 +1,22 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Brand from "./Brand";
+import { AuthContext } from "./ProviderContext/AuthProvider";
 
 const Brands = () => {
   const [brands, setBrands] = useState([]);
+  const { setLoading } = useContext(AuthContext);
 
   useEffect(() => {
+    setLoading(true);
     fetch(
       "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/brands"
     )
       .then((res) => res.json())
       .then((data) => {
         setBrands(data);
+        setLoading(false);
       });
-  }, [brands]);
+  }, []);
 
   return (
     <div className="my-24 px-4 max-w-[1280px] mx-auto">
