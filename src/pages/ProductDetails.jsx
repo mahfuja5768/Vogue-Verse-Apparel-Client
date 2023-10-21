@@ -74,28 +74,28 @@ const ProductDetails = () => {
           />
         </div>
         <div className=" p-5">
-          <h2 className="text-xl font-semibold bg-hoverText text-white rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-hoverText text-black rounded-lg mb-2 p-3">
             Product Name: {product.name}
           </h2>
-          <h2 className="text-xl font-semibold bg-hoverText text-white rounded-lg mb-2 p-3">
+          <h2 className="text-xl font-semibold bg-hoverText text-black rounded-lg mb-2 p-3">
             Brand Name: {product.brandName}
           </h2>
-          <p className="text-lg  bg-hoverText text-white rounded-lg mb-2 p-3">
+          <p className="text-lg  bg-hoverText text-black rounded-lg mb-2 p-3">
             Type: {product.type}
           </p>
 
-          <p className="text-lg bg-hoverText text-white rounded-lg mb-2 p-3 ">
+          <p className="text-lg bg-hoverText text-black rounded-lg mb-2 p-3 ">
             <span className="font-medium"> Description:</span>{" "}
             {product.description}
           </p>
 
-          <div className="flex  gap-4 my-2 bg-hoverText text-white rounded-lg mb-2 p-3">
+          <div className="flex  gap-4 my-2 bg-hoverText text-black rounded-lg mb-2 p-3">
             <p className="text-lg font-semibold">Rating: {product.rating}</p>
-            <p className="text-lg font-semibold">Price: {product.price}</p>
+            <p className="text-lg font-semibold">Price: ${product.price}</p>
           </div>
           <button
             onClick={() => handleToMyCart(product._id)}
-            className="btn bg-secondary my-2 w-full  hover:bg-hoverText text-white"
+            className="btn bg-secondary border-none my-2 w-full  hover:bg-hoverText text-white"
           >
             Add to cart
           </button>

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="">
-      <div className="hero min-h-[400px] bg-gradient-to-b from-yellow-200 to-transparent ">
-        <div className="hero-content max-w-[1280px] mx-auto py-12 px-4  text-start text-black flex gap-6 justify-between flex-col md:flex-row">
+      <div className="bg-gradient-to-b from-lightPrimary hero min-h-[400px]  ">
+        <div className="hero-content max-w-[1280px] mx-auto py-12 px-4  text-start  flex gap-6 justify-between flex-col md:flex-row">
           <div>
             <h1 className="text-xl font-semibold">Welcome To,</h1>
             <h1 className="mb-5 text-4xl lg:text-5xl font-bold">

@@ -11,7 +11,6 @@ const Register = () => {
   const location = useLocation();
   console.log(location);
 
-
   const [registerError, setRegisterError] = useState("");
   const [showPass, setShowPass] = useState(true);
 
@@ -50,7 +49,7 @@ const Register = () => {
           icon: "success",
           confirmButtonText: "Done",
         });
-        return navigate(location?.state ? location.state : '/')
+        return navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
         setRegisterError(err.message);
@@ -77,9 +76,9 @@ const Register = () => {
       });
   };
   return (
-    <div className="py-0 lg:py-8">
-      <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
-        <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12">
+    <div className="py-0 lg:py-8 ">
+      <div className="py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
+        <h1 className="lg:text-5xl text-4xl font-bold text-center mb-12 ">
           Register Now
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-4 items-center gap-6">
@@ -96,7 +95,7 @@ const Register = () => {
               <div className="">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-xl ">Name</span>
+                    <span className="text-xl ">Name</span>
                   </label>
                   <label>
                     <input
@@ -110,7 +109,7 @@ const Register = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text text-xl ">Email</span>
+                    <span className="text-xl ">Email</span>
                   </label>
                   <label>
                     <input
@@ -123,9 +122,9 @@ const Register = () => {
                   </label>
                 </div>
 
-                <div className="form-control text-black text-lg ">
+                <div className="form-control  text-lg ">
                   <label className="label">
-                    <span className="label-text text-lg ">Password</span>{" "}
+                    <span className="text-lg ">Password</span>{" "}
                     <span>
                       {showPass ? (
                         <FaEyeSlash onClick={() => setShowPass(!showPass)} />
@@ -143,9 +142,9 @@ const Register = () => {
                   />
                 </div>
               </div>
-              <div className="form-control text-black mt-4">
+              <div className="form-control  mt-4">
                 <label className="label">
-                  <span className="label-text text-xl">Photo Url</span>
+                  <span className="text-xl">Photo Url</span>
                 </label>
                 <input
                   type="text"
@@ -154,7 +153,7 @@ const Register = () => {
                   className="input input-bordered w-full"
                 />
               </div>
-              <p className="text-black text-lg my-5">
+              <p className=" text-lg my-5">
                 Already have an account ?
                 <Link to="/login" className="link text-blue-500 ms-2">
                   Login now
@@ -173,7 +172,7 @@ const Register = () => {
             </form>
             <button
               onClick={handleGoogle}
-              className="btn w-full cursor-pointer hover:bg-secondary bg-hoverText text-white"
+              className="btn w-full border-none cursor-pointer hover:bg-hoverText bg-secondary text-white "
             >
               <span>With Google</span>
               <span>

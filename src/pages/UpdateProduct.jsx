@@ -59,7 +59,7 @@ const UpdateProduct = () => {
 
   return (
     <div className="py-0 lg:py-8">
-      <div className="bg-gradient-to-b from-yellow-200 to-transparent py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
+      <div className=" py-8 max-w-[1280px] mx-auto px-4 lg:px-12">
         <div className="flex justify-center flex-col items-center  ">
           <h1 className="lg:text-5xl text-4xl font-bold text-center">
             Product Update Form
@@ -83,7 +83,7 @@ const UpdateProduct = () => {
             <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-5  gap-2">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-xl">Product Name</span>
+                  <span className="text-xl">Product Name</span>
                 </label>
                 <label>
                   <input
@@ -97,7 +97,7 @@ const UpdateProduct = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-xl ">Brand Name</span>
+                  <span className="text-xl ">Brand Name</span>
                 </label>
                 <label>
                   <select
@@ -115,7 +115,7 @@ const UpdateProduct = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-xl ">Product Type</span>
+                  <span className="text-xl ">Product Type</span>
                 </label>
                 <label>
                   <input
@@ -129,7 +129,7 @@ const UpdateProduct = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-xl ">Price</span>
+                  <span className="text-xl ">Price</span>
                 </label>
                 <label>
                   <input
@@ -143,7 +143,7 @@ const UpdateProduct = () => {
               </div>
               <div className="form-control ">
                 <label className="label">
-                  <span className="label-text text-xl ">Product Image</span>
+                  <span className="text-xl ">Product Image</span>
                 </label>
                 <label>
                   <input
@@ -158,7 +158,7 @@ const UpdateProduct = () => {
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-xl ">Rating</span>
+                  <span className="text-xl ">Rating</span>
                 </label>
                 <label>
                   <input
@@ -174,7 +174,7 @@ const UpdateProduct = () => {
 
             <div className="form-control mt-4">
               <label className="label">
-                <span className="label-text text-xl ">Short description</span>
+                <span className="text-xl ">Short description</span>
               </label>
               <label>
                 <input

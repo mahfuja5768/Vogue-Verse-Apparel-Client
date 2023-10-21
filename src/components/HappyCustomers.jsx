@@ -2,7 +2,7 @@ import React from "react";
 
 const HappyCustomers = () => {
   return (
-    <div className="my-12 max-w-[1280px] mx-auto px-4">
+    <div className="my-24 max-w-[1280px] mx-auto px-4">
       <div className="flex justify-center items-center flex-col">
         <h2 className="md:text-4xl text-2xl font-bold my-8">
           Happy Customers, Happy Us

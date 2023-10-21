@@ -9,9 +9,14 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [showPass, setShowPass] = useState(true);
+  const [showIcon, setShowIcon] = useState(true);
 
   const { logOut, user } = useContext(AuthContext);
+
+  const handleToggleTheme = () => {
+    document.body.classList.toggle("dark-theme");
+    setShowIcon(!showIcon);
+  };
 
   const handleLogout = () => {
     logOut()
@@ -28,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="mb-12 bg-gradient-to-b from-yellow-200 to-transparent border-b-2 shadow-lg text-black">
+      <nav className="mb-12 shadow shadow-base">
         <div className="max-w-[1280px] mx-auto lg:grid lg:grid-cols-4 lg:gap-2 flex items-center flex-row-reverse p-4 justify-between lg:flex-row gap-6">
           <div
             onClick={() => setOpen(!open)}
@@ -37,15 +42,15 @@ const Navbar = () => {
             {
               // open ? 'close icon' : 'open icon'
               open ? (
-                <FaX className="text-2xl text-black"></FaX>
+                <FaX className="text-2xl "></FaX>
               ) : (
-                <FaBars className="text-2xl text-black"></FaBars>
+                <FaBars className="text-2xl "></FaBars>
               )
             }
           </div>
           <div>
             <Link to="/">
-              <img src={logo} alt="" className="lg:w-52 w-48 lg:h-16  h-14" />
+              <img src={logo} alt="" className="lg:w-52 w-48 lg:h-16 bg-white h-14" />
             </Link>
           </div>
 
@@ -140,7 +145,7 @@ const Navbar = () => {
                     alt="user photo"
                   />
                 )}
-                <h3 className="text-black text-sm text-center mt-1">
+                <h3 className=" text-sm text-center mt-1">
                   {user?.displayName}
                 </h3>
               </div>
@@ -149,7 +154,7 @@ const Navbar = () => {
               <Link
                 to="/login"
                 onClick={handleLogout}
-                className="btn bg-secondary hover:bg-hoverText text-white"
+                className="btn bg-secondary border-none hover:bg-hoverText text-white"
               >
                 Log out
               </Link>
@@ -157,22 +162,19 @@ const Navbar = () => {
             {!user && (
               <Link
                 to="/login"
-                className="btn bg-secondary hover:bg-hoverText text-white"
+                className="btn bg-secondary border-none hover:bg-hoverText text-white"
               >
                 Login
               </Link>
             )}
-            {showPass ? (
-              <FaSun
-                className="text-2xl"
-                onClick={() => setShowPass(!showPass)}
-              />
-            ) : (
-              <FaMoon
-                className="text-2xl"
-                onClick={() => setShowPass(!showPass)}
-              />
-            )}
+
+            <span>
+              {showIcon ? (
+                <FaMoon className="text-2xl cursor-pointer" onClick={handleToggleTheme} />
+                ) : (
+                  <FaSun className="text-2xl cursor-pointer" onClick={handleToggleTheme} />
+              )}
+            </span>
           </div>
         </div>
         <ul
@@ -287,32 +289,23 @@ const Navbar = () => {
               <Link
                 to="/login"
                 onClick={handleLogout}
-                className="btn bg-white hover:bg-black text-black"
+                className="btn bg-white border-none text-black"
               >
                 Log out
               </Link>
             )}
             {!user && (
-              <Link
-                to="/login"
-                className="btn  bg-white hover:bg-black text-black"
-              >
+              <Link to="/login" className="btn bg-white border-none text-black">
                 Login
               </Link>
             )}
           </li>
           <li>
-            {showPass ? (
-              <FaSun
-                className="text-2xl"
-                onClick={() => setShowPass(!showPass)}
-              />
+            {/* {showIcon ? (
+              <FaSun className="text-2xl"  />
             ) : (
-              <FaMoon
-                className="text-2xl"
-                onClick={() => setShowPass(!showPass)}
-              />
-            )}
+              <FaMoon className="text-2xl" />
+            )} */}
           </li>
         </ul>
       </nav>

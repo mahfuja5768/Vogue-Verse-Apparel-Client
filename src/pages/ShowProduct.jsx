@@ -7,7 +7,7 @@ const ShowProduct = ({ product }) => {
     product;
   return (
     <div>
-      <div className="bg-gradient-to-t h-[600px] from-yellow-100 shadow-lg p-5 rounded-3xl text-start mb-5">
+      <div className=" h-[600px] shadow-lg p-5 rounded-3xl text-start mb-5">
         <div className="-mt-12">
           <img
             src={image}
@@ -31,7 +31,7 @@ const ShowProduct = ({ product }) => {
 
         <div className="flex  gap-4 my-2">
           <p className="text-lg font-semibold">Rating: {rating}</p>
-          <p className="text-lg font-semibold">Price: {price}</p>
+          <p className="text-lg font-semibold">Price: ${price}</p>
         </div>
 
         <div className="flex justify-between flex-col">

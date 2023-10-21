@@ -59,7 +59,7 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
 
         <div className="flex  gap-4 my-2">
           <p className="text-lg font-semibold">Rating: {rating}</p>
-          <p className="text-lg font-semibold">Price: {price}</p>
+          <p className="text-lg font-semibold">Price: ${price}</p>
         </div>
         <button
           onClick={() => handleDelete(_id)}
@@ -68,7 +68,7 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
           <span>
             <FaTrash></FaTrash>
           </span>
-          <span className="ms-1"> Delete</span>
+          <span className="ms-1">Delete</span>
         </button>
       </div>
     </div>

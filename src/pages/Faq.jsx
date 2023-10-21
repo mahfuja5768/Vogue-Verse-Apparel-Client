@@ -1,7 +1,7 @@
 const Faq = () => {
   return (
-    <div className="max-w-[1280px] mx-auto px-4 my-24">
-      <div className="flex justify-center items-center flex-col my-5">
+    <div className="max-w-[1280px] mx-auto px-4 my-32 ">
+      <div className="flex justify-center items-center flex-col my-5 ">
         <h2 className="md:text-4xl text-2xl font-bold  ">
           Explore Our Frequently Asked Questions
         </h2>
@@ -18,7 +18,7 @@ const Faq = () => {
           as possible.
         </p>
       </div>
-      <div className="collapse collapse-arrow bg-base-200 mb-5">
+      <div className="collapse collapse-arrow bg-base-200 mb-5  text-black rounded">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl font-medium">
           What is Vogue-Verse-Apparel?
@@ -32,7 +32,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-      <div className="collapse collapse-arrow bg-base-200 mb-5">
+      <div className="collapse collapse-arrow bg-base-200 mb-5 text-black  rounded">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl font-medium">
           How do I place an order?
@@ -46,7 +46,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-      <div className="collapse collapse-arrow bg-base-200 mb-5">
+      <div className="collapse collapse-arrow bg-base-200 mb-5 text-black rounded">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl font-medium">
           Can I track my order?
@@ -59,7 +59,7 @@ const Faq = () => {
           </p>
         </div>
       </div>
-      <div className="collapse collapse-arrow bg-base-200 mb-5">
+      <div className="collapse collapse-arrow bg-base-200 mb-5 text-black rounded">
         <input type="radio" name="my-accordion-2" />
         <div className="collapse-title text-xl font-medium">
           How can I contact your customer support?

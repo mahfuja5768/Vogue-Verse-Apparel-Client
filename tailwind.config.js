@@ -8,9 +8,11 @@ export default {
     extend: {
       colors: {
         primary: "#fef18f",
-        lightPrimary: "#fffcd9",
-        secondary: "#898121",
-        hoverText: "#87805E",
+        lightPrimary: "#ADC4CE",
+        // secondary: "#898121",
+        // secondary: "#3A98B9",
+        secondary: "#526D82",
+        hoverText: "#9DB2BF",
       },
     },
   },
