@@ -9,9 +9,7 @@ const MyCart = () => {
   const currentUserEmail = user.email;
 
   useEffect(() => {
-    fetch(
-      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/addProduct"
-    )
+    fetch("https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/addProduct")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

@@ -33,7 +33,7 @@ const UpdateProduct = () => {
     console.log(newProduct);
 
     fetch(
-      `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/single-product/${updateProductId}`,
+      `https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/single-product/${updateProductId}`,
       {
         method: "PUT",
         headers: {

@@ -4,36 +4,19 @@ import ShowProduct from "./ShowProduct";
 
 const ShowProducts = () => {
   const [products, setProducts] = useState([]);
-  const [advertiseBrand, setAdvertiseBrand] = useState([]);
 
   const { brandName } = useParams();
   const selectedBrand = brandName;
-  // console.log(selectedBrand);
+  console.log(selectedBrand);
 
   useEffect(() => {
-    fetch(
-      `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/brandsProduct/${selectedBrand}`
-    )
+    fetch(`https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/brandsProduct/${selectedBrand}`)
+
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) => { console.log(data)
         setProducts(data);
       });
-  }, [selectedBrand]);
-
-  useEffect(() => {
-    fetch(
-      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/brands"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        const advertiseBrand = data.find(
-          (add) => add.brandName === selectedBrand
-        );
-        // console.log(data)
-        setAdvertiseBrand(advertiseBrand);
-      });
-  }, [selectedBrand]);
+  }, []);
 
   return (
     <div className="my-24 px-6 max-w-[1280px] mx-auto">
@@ -52,10 +35,7 @@ const ShowProducts = () => {
         <>
           <div className="carousel w-full h-[300px] md:h-[400px]">
             <div id="slide1" className="carousel-item relative w-full">
-              <img
-                src={advertiseBrand?.advertisementImage1}
-                className="w-full"
-              />
+              <img src={"https://i.ibb.co/QQ7Jp30/z2.jpg"} className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
                   ❮
@@ -66,10 +46,7 @@ const ShowProducts = () => {
               </div>
             </div>
             <div id="slide2" className="carousel-item relative w-full">
-              <img
-                src={advertiseBrand?.advertisementImage2}
-                className="w-full"
-              />
+              <img src={"https://i.ibb.co/Sn0jmrr/z1.jpg"} className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
                   ❮
@@ -80,10 +57,7 @@ const ShowProducts = () => {
               </div>
             </div>
             <div id="slide3" className="carousel-item relative w-full">
-              <img
-                src={advertiseBrand?.advertisementImage3}
-                className="w-full"
-              />
+              <img src={"https://i.ibb.co/SXz5vXn/n1.jpg"} className="w-full" />
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
                   ❮

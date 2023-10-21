@@ -18,12 +18,9 @@ const MyCartProduct = ({ product, setMyAddedProducts, myAddedProducts }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(
-          `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/addProduct/${_id}`,
-          {
-            method: "DELETE",
-          }
-        )
+        fetch(`https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/addProduct/${_id}`, {
+          method: "DELETE",
+        })
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {

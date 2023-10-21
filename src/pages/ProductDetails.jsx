@@ -10,9 +10,7 @@ const ProductDetails = () => {
   const { id } = useParams();
   const productId = id;
   useEffect(() => {
-    fetch(
-      `https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/single-product/${productId}`
-    )
+    fetch(`https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/single-product/${productId}`)
       .then((res) => res.json())
       .then((data) => {
         // console.log(data[0].brandName);
@@ -42,16 +40,13 @@ const ProductDetails = () => {
     };
     // console.log(addProduct);
 
-    fetch(
-      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/addProduct",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(addProduct),
-      }
-    )
+    fetch("https://vogue-verse-apparel-server-mdr7fjq0n-mahfuja5768.vercel.app/addProduct", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(addProduct),
+    })
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);

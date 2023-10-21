@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "652fafc3397292473415bf4e",
+    "brandName": "Nike",
+    "brandImage": "https://i.ibb.co/r79ChT1/Nike-Logo.png",
+    "advertisementImage1":"https://i.ibb.co/44bpPLF/n3.jpg",
+    "advertisementImage2":"https://i.ibb.co/ygCt6Dc/n2.jpg",
+    "advertisementImage3":"https://i.ibb.co/SXz5vXn/n1.jpg"
+  },
+  {
+    "_id": "652fafc3397292473415bf4f",
+    "brandName": "Gucci",
+    "brandImage": "https://i.ibb.co/SRZw3ht/g.png",
+    "advertisementImage1":"https://i.ibb.co/vmmpSQ4/G1.webp",
+    "advertisementImage2":"https://i.ibb.co/xhC5pGk/G2.jpg",
+    "advertisementImage3":"https://i.ibb.co/0V03SwW/G3.jpg"
+  },
+  {
+    "_id": "652fafc3397292473415bf50",
+    "brandName": "Zara",
+    "brandImage": "https://i.ibb.co/g4cVBGt/z.png",
+    "advertisementImage1":"https://i.ibb.co/QQ7Jp30/z2.jpg",
+    "advertisementImage2":"https://i.ibb.co/Sn0jmrr/z1.jpg",
+    "advertisementImage3":"https://i.ibb.co/Mnjvmwz/z3.jpg"
+  },
+  {
+    "_id": "652fafc3397292473415bf51",
+    "brandName": "H&M",
+    "brandImage": "https://i.ibb.co/ryfSRcb/709px-H-M-Logo-svg.png",
+    "advertisementImage1":"https://i.ibb.co/vcMtxR7/h1.jpg",
+    "advertisementImage2":"https://i.ibb.co/9Z3yvdW/h2.jpg",
+    "advertisementImage3":"https://i.ibb.co/m9tBdBK/h2.webp"
+  },
+  {
+    "_id": "652fafc3397292473415bf52",
+    "brandName": "Levi's",
+    "brandImage": "https://i.ibb.co/3S1Vpd1/l.png",
+    "advertisementImage1":"https://i.ibb.co/gvM5XX8/l2.webp",
+    "advertisementImage2":"https://i.ibb.co/TrZQ5SF/l3.jpg ",
+    "advertisementImage3":"https://i.ibb.co/cFf2rQn/l1.webp "
+  },
+  {
+    "_id": "652fafc3397292473415bf53",
+    "brandName": "Adidas",
+    "brandImage": "https://i.ibb.co/VpHBqSP/a.png",
+    "advertisementImage1":" ",
+    "advertisementImage2":" ",
+    "advertisementImage3":" "
+  }
+]

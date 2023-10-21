@@ -8,11 +8,9 @@ const Brands = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(
-      "https://vogue-verse-apparel-server-abtkz7sg9-mahfuja5768.vercel.app/brands"
-    )
+    fetch("brands.json")
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) => { console.log(data)
         setBrands(data);
         setLoading(false);
       });
