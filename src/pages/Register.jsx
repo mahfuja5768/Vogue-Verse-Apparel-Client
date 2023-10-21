@@ -125,7 +125,7 @@ const Register = () => {
 
                 <div className="form-control  text-lg ">
                   <label className="label">
-                    <span className="text-lg ">Password</span>{" "}
+                    <span className="text-lg">Password</span>{" "}
                     <span>
                       {showPass ? (
                         <FaEyeSlash onClick={() => setShowPass(!showPass)} />
@@ -138,7 +138,7 @@ const Register = () => {
                     type={showPass ? "password" : "text"}
                     name="password"
                     placeholder="password"
-                    className="input input-bordered"
+                    className="input input-bordered text-black"
                     required
                   />
                 </div>

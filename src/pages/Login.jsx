@@ -106,7 +106,7 @@ const Login = () => {
                   type={showPass ? "password" : "text"}
                   name="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input input-bordered text-black"
                   required
                 />
               </div>
